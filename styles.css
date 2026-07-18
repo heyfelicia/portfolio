@@ -1,0 +1,195 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Poppins", sans-serif;
+    font-weight:200;
+    color:#111;
+    background:#ffffff;
+}
+
+
+
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:2.5rem 4rem;
+
+}
+
+.logo{
+
+    text-decoration:none;
+    color:inherit;
+
+    font-size:1.2rem;
+    font-weight:300;
+
+    letter-spacing:.05em;
+
+}
+
+.nav-links{
+
+    display:flex;
+    gap:2.5rem;
+
+    list-style:none;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+    color:inherit;
+
+    font-size:1rem;
+    font-weight:300;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    opacity:.55;
+
+}
+
+
+
+#hero{
+
+    min-height:calc(100vh - 90px);
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:0 2rem;
+
+}
+
+.eyebrow{
+
+    margin-bottom:2rem;
+
+    font-size:.8rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:.18em;
+
+    font-weight:300;
+
+}
+
+#hero h1{
+
+    max-width:950px;
+
+    font-size:clamp(3rem,6vw,5.5rem);
+
+    font-weight:200;
+
+    line-height:1.15;
+
+    letter-spacing:-.03em;
+
+    font-family: "ivypresto-display", serif;
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+.decorative{
+
+    display:inline-flex;
+    align-items:center;
+
+    margin:0 .25rem;
+
+}
+
+.decorative img{
+
+    width:150px;
+    height:auto;
+
+    vertical-align:middle;
+
+}
+
+.hero-button{
+
+    margin-top:4rem;
+
+    text-decoration:none;
+
+    color:#111;
+
+    font-size:1rem;
+
+    font-weight:300;
+
+    border-bottom:1px solid #111;
+
+    padding-bottom:.25rem;
+
+    transition:.3s;
+
+}
+
+.hero-button:hover{
+
+    opacity:.6;
+
+}
+
+
+
+
+#work{
+
+    padding:8rem 4rem;
+
+}
+
+.section-heading span{
+
+    display:block;
+
+    text-transform:uppercase;
+
+    letter-spacing:.15em;
+
+    font-size:.8rem;
+
+    margin-bottom:1rem;
+
+}
+
+.section-heading h2{
+
+    font-size:clamp(2rem,4vw,4rem);
+
+    font-weight:200;
+
+}
