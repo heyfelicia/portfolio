@@ -114,7 +114,7 @@ body {
 
     max-width: 950px;
 
-    font-size: clamp(2.25rem, 4vw, 4.25rem);
+    font-size: clamp(1.5rem, 2.75vw, 3rem);
     line-height: 1.5;
 
     letter-spacing: -.03em;
