@@ -4,7 +4,6 @@
     box-sizing: border-box;
     cursor: none;
     color: #282527;
-
 }
 
 html {
@@ -15,7 +14,7 @@ html {
     position: fixed;
     width: 10px;
     height: 10px;
-    background: #a5d75a;
+    background: #cfe38f;
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);
@@ -27,7 +26,7 @@ html {
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "IBM Plex Mono", monospace;
     font-weight: 200;
     color: #111;
     background: #fefffd;
@@ -74,7 +73,6 @@ body {
     color: #878787;
 
     font-size: 1rem;
-    font-weight: 300;
     letter-spacing: .08em;
 
     transition: .3s;
@@ -95,47 +93,56 @@ body {
 
 #hero {
 
+    position: relative;
+
     min-height: calc(100vh - 90px);
 
     display: flex;
-    flex-direction: column;
-
     justify-content: center;
     align-items: center;
 
-    text-align: center;
-
     padding: 0 2rem;
+
+    overflow: hidden;
 
 }
 
+.hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
 #hero h1 {
 
     max-width: 950px;
-
-    font-size: clamp(1.5rem, 2.75vw, 3rem);
-    line-height: 1.5;
-
+    font-size: clamp(6rem, 4vw, 5rem);
+    line-height: 1.1;
     letter-spacing: -.03em;
-
-    /*font-family: "ivypresto-display", serif;*/
-    font-weight: 100;
-    font-style: normal;
+    font-style: left;
     text-align: center;
+    font-family: ivypresto-display, serif;
+    font-weight: 100;
+    margin-bottom:2rem;
 
 }
 
-.italics {
-    font-style: italic;
+#hero p {
+max-width: 30%;
+font-family: "IBM Plex Mono", monospace;
+font-weight: 500;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+text-align: center;
+line-height: 1.8;
 }
-
-
-
 
 .hero-button {
 
-    margin-top: 4rem;
+    margin-top: 2rem;
 
     text-decoration: none;
 
@@ -160,32 +167,63 @@ body {
 }
 
 
+.project{
 
+    position:absolute;
 
-#archive {
+    display:block;
 
-    padding: 8rem 4rem;
+    width:300px;
 
-}
-
-.section-heading span {
-
-    display: block;
-
-    text-transform: uppercase;
-
-    letter-spacing: .15em;
-
-    font-size: .8rem;
-
-    margin-bottom: 1rem;
+    transition:.35s ease;
 
 }
 
-.section-heading h2 {
+.project img{
 
-    font-size: clamp(1.5rem, 4vw, 3.5rem);
+    display:block;
 
-    font-weight: 100;
+    width:100%;
 
 }
+
+.project:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+.reverie{
+
+    top:10%;
+    left:5%;
+
+}
+
+.lillybell{
+
+    top:1%;
+    right:4%;
+    width:500px;
+
+}
+
+.hilton{
+
+    bottom:9%;
+    left:13%;
+
+}
+
+.dashboard{
+
+    bottom:12%;
+    right:10%;
+
+}
+
+.dashboard img {
+    width:400px;
+}
+
