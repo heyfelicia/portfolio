@@ -1,14 +1,26 @@
+/* Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     cursor: none;
-    color: #282527;
 }
 
 html {
     scroll-behavior: smooth;
 }
+
+/* Global */
+
+body {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 200;
+    color: #000000;
+    background: #fffffe;
+}
+
+/* Cursor */
 
 .cursor {
     position: fixed;
@@ -20,63 +32,41 @@ html {
     transform: translate(-50%, -50%);
     z-index: 9999;
     transition:
-        transform 0.08s ease,
-        width 0.2s ease,
-        height 0.2s ease;
+        transform .08s ease,
+        width .2s ease,
+        height .2s ease;
 }
 
-body {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 100;
-    color: #111;
-    background: #fffffe;
-}
-
-
-
+/* Navigation */
 
 .navbar {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 2.5rem 4rem;
-
 }
 
 .logo {
-
     text-decoration: none;
     color: inherit;
-
-    font-size: 1rem;
-    font-weight: 300;
     text-transform: uppercase;
     letter-spacing: .05em;
-
-
 }
 
 .nav-links {
-
     display: flex;
     gap: 2.5rem;
-
     list-style: none;
-
 }
 
 .nav-links a {
-
     text-decoration: none;
     color: #878787;
-
-    font-size: 1rem;
     letter-spacing: .08em;
     text-transform: uppercase;
-    transition: .3s;
-
+    transition: opacity .3s;
+     font-weight: 200;
+    
 }
 
 .active a {
@@ -84,153 +74,167 @@ body {
 }
 
 .nav-links a:hover {
-
     opacity: .35;
-
 }
 
-
+/* Hero */
 
 #hero {
-
     position: relative;
-
     min-height: calc(100vh - 90px);
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding: 0 2rem;
-
-
 }
 
-.hero-content{
+.hero-content {
     position: relative;
     z-index: 0;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-
     transform: translateY(-40px);
     margin: 20px auto;
 }
 
-#hero h1{
+#hero h1 {
     max-width: 950px;
     font-size: clamp(8rem, 11vw, 10rem);
     line-height: 1.1;
-    letter-spacing: 0.2px;
+    letter-spacing: .2px;
     font-family: ivypresto-display, serif;
     font-weight: 100;
     margin-bottom: 2.5rem;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
-#hero p{
-
-    width:420px;
-
-    font-size:14px;
-
-    font-weight:500;
-
-    line-height:1.9;
-
-    letter-spacing:.08em;
-
-    text-transform:uppercase;
-
-    margin-top:.5rem;
-
-}
-
-.hero-button{
-    margin-top: 2.5rem;
-
-    text-decoration: none;
-    color: #111;
-
-    font-size: 15px;
-    font-weight: 300;
+#hero p {
+    max-width: 420px;
+    margin-top: .5rem;
+    font-size: .875rem;
+    line-height: 1.9;
+    letter-spacing: .08em;
     text-transform: uppercase;
+}
 
-    border-bottom: 1px solid #111;
+.hero-button {
+    margin-top: 2.5rem;
+    text-decoration: none;
+    font-size: .9375rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid currentColor;
     padding-bottom: .25rem;
-
-    transition: .3s;
+    transition: opacity .3s;
+    color: #000000;
 }
 
-.gems{
-    position:absolute;
-    inset:0;
-    z-index:1;
+.hero-button:hover {
+    opacity: .6;
 }
 
-.gem{
-    position:absolute;
-    transition:transform .45s cubic-bezier(.22,1,.36,1);
+/* Gems */
+
+.gems {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
 }
 
+.gem {
+    position: absolute;
+    height: auto;
+    will-change: transform;
+    transition: transform .45s cubic-bezier(.22, 1, .36, 1);
+}
 
-
-.gem-flower-green{
+.gem-flower-green {
     width: 74px;
     left: 39%;
     top: 8%;
     transform: rotate(-18deg);
 }
 
-.gem-ruby{
+.gem-ruby {
     width: 62px;
     left: 67%;
     top: 13%;
     transform: rotate(18deg);
 }
 
-.gem-moon{
+.gem-moon {
     width: 90px;
     left: 24%;
     top: 34%;
     transform: rotate(-10deg);
 }
 
-.gem-heart{
+.gem-heart {
     width: 70px;
     left: 66%;
     top: 46%;
     transform: rotate(12deg);
 }
 
-.gem-butterfly{
+.gem-butterfly {
     width: 80px;
     left: 50%;
-    top: 66%;
+    top: 62%;
     transform: translateX(-50%) rotate(-8deg);
     z-index: 3;
 }
 
-.gem-flower-purple{
+.gem-flower-purple {
     width: 74px;
     left: 22%;
     top: 70%;
     transform: rotate(-14deg);
 }
 
-.gem-cloud{
+.gem-cloud {
     width: 86px;
     left: 73%;
-    top: 81%;
+    top: 70%;
     transform: rotate(8deg);
 }
 
-.gem-triangle{
+.gem-triangle {
     width: 72px;
     left: 81%;
-    top: 72%;
+    top: 52%;
     transform: rotate(-18deg);
+}
+
+/* Chatbot */
+
+.chatbot {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 20px;
+    background: #000000;
+    border:none;
+    border-radius: 50%;
+    font-size: .875rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    box-shadow: 0 8px 30px rgba(0,0,0,.05);
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+    z-index: 1000;
+}
+
+.chatbot img {
+    width: 20px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.chatbot:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 40px rgba(0,0,0,.08);
 }
