@@ -27,9 +27,9 @@ html {
 
 body {
     font-family: "IBM Plex Mono", monospace;
-    font-weight: 200;
+    font-weight: 100;
     color: #111;
-    background: #fefffd;
+    background: #fffff8;
 }
 
 
@@ -107,144 +107,150 @@ body {
 
 }
 
-.hero-content {
+.hero-content{
     position: relative;
-    z-index: 1;
+    z-index: 0;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    transform: translateY(-40px);
+    margin: 20px auto;
 }
 
-#hero h1 {
-
+#hero h1{
     max-width: 950px;
-    font-size: clamp(6rem, 4vw, 5rem);
+    font-size: clamp(8rem, 11vw, 10rem);
     line-height: 1.1;
-    letter-spacing: -.03em;
-    font-style: left;
-    text-align: center;
+    letter-spacing: 0.2px;
     font-family: ivypresto-display, serif;
     font-weight: 100;
-    margin-bottom:2rem;
+    margin-bottom: 2.5rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#hero p{
+
+    width:420px;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    line-height:1.9;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+    margin-top:.5rem;
 
 }
 
-.hero-title {
-    position: relative;
-    z-index: 1;
-}
-
-.star {
-    position: absolute;
-    top: 23px;
-    left: 90px;
-    z-index: 0;
-}
-
-.star img {
-    width:20px; 
-}
-
-
-#hero p {
-max-width: 30%;
-font-family: "IBM Plex Mono", monospace;
-font-weight: 500;
-letter-spacing: 0.08em;
-text-transform: uppercase;
-text-align: center;
-line-height: 1.8;
-}
-
-.hero-button {
-
-    margin-top: 2rem;
+.hero-button{
+    margin-top: 2.5rem;
 
     text-decoration: none;
-
     color: #111;
 
-    font-size: 1rem;
-
+    font-size: 15px;
     font-weight: 300;
+    text-transform: uppercase;
 
     border-bottom: 1px solid #111;
-
     padding-bottom: .25rem;
 
     transition: .3s;
+}
 
-    text-transform: uppercase;
+.gems{
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.gem{
+    position: absolute;
+    height: auto;
+     animation: float 6s ease-in-out infinite;
 
 }
 
-.hero-button:hover {
+@keyframes float{
 
-    opacity: .6;
+    0%,100%{
+        transform:translateY(0);
+    }
 
-}
-
-
-.project{
-
-    position:absolute;
-
-    display:block;
-
-    width:300px;
-
-    transition:.35s ease;
+    50%{
+        transform:translateY(-4px);
+    }
 
 }
 
-.project img{
-
-    display:block;
-
-    width:100%;
-
-}
-
-.project:hover{
-
-    transform:translateY(-10px);
-
+.gem:hover{
+    animation-play-state:paused;
+    transform:translateY(-8px) rotate(8deg) scale(1.08);
 }
 
 
-.reverie{
-
-    top:10%;
-    left:5%;
-
+.gem-flower-green{
+    width: 74px;
+    left: 39%;
+    top: 8%;
+    transform: rotate(-18deg);
 }
 
-.lillybell{
-
-    top:1%;
-    right:4%;
-    width:500px;
-
+.gem-ruby{
+    width: 62px;
+    left: 67%;
+    top: 13%;
+    transform: rotate(18deg);
 }
 
-.hilton{
-
-    bottom:9%;
-    left:13%;
-
+.gem-moon{
+    width: 90px;
+    left: 24%;
+    top: 34%;
+    transform: rotate(-10deg);
 }
 
-.dashboard{
-
-    bottom:12%;
-    right:10%;
-
+.gem-heart{
+    width: 70px;
+    left: 66%;
+    top: 46%;
+    transform: rotate(12deg);
 }
 
-.dashboard img {
-    width:400px;
+.gem-butterfly{
+    width: 80px;
+    left: 50%;
+    top: 66%;
+    transform: translateX(-50%) rotate(-8deg);
+    z-index: 3;
 }
 
+.gem-flower-purple{
+    width: 74px;
+    left: 22%;
+    top: 70%;
+    transform: rotate(-14deg);
+}
 
+.gem-cloud{
+    width: 86px;
+    left: 73%;
+    top: 81%;
+    transform: rotate(8deg);
+}
 
+.gem-triangle{
+    width: 72px;
+    left: 81%;
+    top: 72%;
+    transform: rotate(-18deg);
+}
