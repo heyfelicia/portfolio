@@ -109,7 +109,7 @@ body {
 
 #hero h1 {
     max-width: 950px;
-    font-size: clamp(8rem, 11vw, 10rem);
+    font-size: clamp(6rem, 9vw, 8rem);
     line-height: 1.1;
     letter-spacing: .2px;
     font-family: ivypresto-display, serif;
