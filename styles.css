@@ -29,7 +29,7 @@ body {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 100;
     color: #111;
-    background: #fffff8;
+    background: #fffffe;
 }
 
 
@@ -103,7 +103,6 @@ body {
 
     padding: 0 2rem;
 
-    overflow: hidden;
 
 }
 
@@ -167,35 +166,16 @@ body {
 }
 
 .gems{
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    z-index: 1;
+    position:absolute;
+    inset:0;
+    z-index:1;
 }
 
 .gem{
-    position: absolute;
-    height: auto;
-     animation: float 6s ease-in-out infinite;
-
+    position:absolute;
+    transition:transform .45s cubic-bezier(.22,1,.36,1);
 }
 
-@keyframes float{
-
-    0%,100%{
-        transform:translateY(0);
-    }
-
-    50%{
-        transform:translateY(-4px);
-    }
-
-}
-
-.gem:hover{
-    animation-play-state:paused;
-    transform:translateY(-8px) rotate(8deg) scale(1.08);
-}
 
 
 .gem-flower-green{
