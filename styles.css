@@ -15,8 +15,8 @@ html {
 
 body {
     font-family: "IBM Plex Mono", monospace;
-    font-weight: 200;
-    color: #000000;
+    font-weight: 100;
+    color: #443733;
     background: #fffffe;
 }
 
@@ -66,7 +66,7 @@ body {
     letter-spacing: .08em;
     text-transform: uppercase;
     transition: opacity .3s;
-     font-weight: 200;
+     font-weight: 100;
     
 }
 
@@ -134,7 +134,7 @@ body {
     line-height: 1.9;
     padding-bottom: .25rem;
     transition: opacity .3s;
-    color: #000000;
+     color: #443733;
 }
 
 .hero-button:hover {
@@ -216,6 +216,83 @@ body {
     transform: rotate(-89deg);
 }
 
+/* Archive */
+
+
+#archive {
+    width: min(1450px, 92%);
+    margin: 0 auto;
+    padding: 10rem 0;
+}
+
+/* ---------- Heading ---------- */
+
+.archive-header {
+    margin-bottom: 5rem;
+    font-family: ivypresto-display, serif;
+}
+
+.archive-header sub {
+    display: inline-block;
+    font-size: 1.8rem;
+    color: #e6ba69;
+    border-bottom: 1px solid #e6ba69;
+    line-height: 1;
+    padding-bottom: .4rem;
+    margin-bottom: 1.5rem;
+}
+
+.archive-header h2 {
+    font-size: clamp(2.8rem, 4vw, 4rem);
+    font-weight: 100;
+    line-height: 1.1;
+}
+
+/* ---------- Projects Grid ---------- */
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+
+    width: 100%;
+}
+
+/* ---------- Project Card ---------- */
+
+.project {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background: #f3f3f3;
+    overflow: hidden;
+
+}
+
+
+.project-title {
+    margin-top: 1.6rem;
+
+    font-size: .95rem;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    font-weight: 400;
+}
+
+.project-description {
+    margin-top: .75rem;
+
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+
+
 /* Chatbot */
 
 .chatbot {
@@ -226,7 +303,7 @@ body {
     align-items: center;
     gap: 14px;
     padding: 20px;
-    background: #000000;
+    background: #443733;
     border:none;
     border-radius: 50%;
     font-size: .875rem;
@@ -253,7 +330,7 @@ body {
 
 /* --- Footer Container --- */
 footer.editorial-footer {
-  background-color: #0d0d0d; 
+  background-color: #1d1715;; 
   color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -285,7 +362,7 @@ footer ul.footer-links {
 }
 
 footer ul.footer-links a {
-  color: #a3a3a3;
+  color: #bfbfbf;
   text-decoration: none;
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -308,7 +385,7 @@ footer ul.footer-links a:hover {
 .input-group {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #444444; 
+  border-bottom: 1px solid #bfbfbf; 
   padding-bottom: 6px;
   transition: border-color 0.3s ease;
 }
@@ -329,7 +406,7 @@ footer ul.footer-links a:hover {
 }
 
 .footer-form input[type="email"]::placeholder {
-  color: #666666;
+  color: #bfbfbf;
 }
 
 .footer-form button[type="submit"] {
