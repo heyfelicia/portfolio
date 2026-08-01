@@ -145,7 +145,7 @@ body {
     position: absolute;
     inset: 0;
     z-index: 1;
-    pointer-events: none; /* Allows user to click things behind them if needed */
+    pointer-events: none; 
 }
 
 /* Individual Gem Baseline */
@@ -153,7 +153,7 @@ body {
     position: absolute;
     height: auto;
     will-change: transform;
-    pointer-events: auto; /* Re-enables hover states for the images */
+    pointer-events: auto; 
 }
 
 .gem-flower-green {
@@ -245,4 +245,103 @@ body {
 .chatbot:hover {
     transform: translateY(-3px);
     box-shadow: 0 18px 40px rgba(0,0,0,.08);
+}
+
+
+/* --- Footer Container --- */
+footer.editorial-footer {
+  background-color: #0d0d0d; 
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 70px; 
+  margin-top: 80px;
+  font-family: monospace, monospace; 
+}
+
+/* --- Brand Name --- */
+.brand-name {
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
+  color: #e5e5e5;
+}
+
+/* --- Navigation & Links --- */
+footer ul.footer-links {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+
+footer ul.footer-links a {
+  color: #a3a3a3;
+  text-decoration: none;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+footer ul.footer-links a:hover {
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+
+.footer-form {
+  display: flex;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #444444; 
+  padding-bottom: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.input-group:focus-within {
+  border-bottom-color: #ffffff; 
+}
+
+.footer-form input[type="email"] {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.85rem;
+  padding: 4px 8px 4px 0;
+  width: 180px;
+}
+
+.footer-form input[type="email"]::placeholder {
+  color: #666666;
+}
+
+.footer-form button[type="submit"] {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  padding: 4px 0 4px 8px;
+  transition: opacity 0.2s ease;
+}
+
+.footer-form button[type="submit"]:hover {
+  opacity: 0.7;
 }
