@@ -80,12 +80,16 @@ body {
 /* Hero */
 
 #hero {
-    position: relative;
+     position: relative;
     min-height: calc(100vh - 90px);
+    width: 100%;             
+    max-width: 900px;       
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 2rem;
+    margin: 0 auto;        
+    box-sizing: border-box; 
 }
 
 .hero-content {
@@ -123,7 +127,8 @@ body {
     text-decoration: none;
     font-size: .9375rem;
     text-transform: uppercase;
-    border-bottom: 1px solid currentColor;
+    border-bottom: 1px solid #e6ba69;
+    line-height: 1.9;
     padding-bottom: .25rem;
     transition: opacity .3s;
     color: #000000;
@@ -135,17 +140,20 @@ body {
 
 /* Gems */
 
+/* Gems Container */
 .gems {
     position: absolute;
     inset: 0;
     z-index: 1;
+    pointer-events: none; /* Allows user to click things behind them if needed */
 }
 
+/* Individual Gem Baseline */
 .gem {
     position: absolute;
     height: auto;
     will-change: transform;
-    transition: transform .45s cubic-bezier(.22, 1, .36, 1);
+    pointer-events: auto; /* Re-enables hover states for the images */
 }
 
 .gem-flower-green {
@@ -164,45 +172,45 @@ body {
 
 .gem-moon {
     width: 90px;
-    left: 24%;
-    top: 34%;
-    transform: rotate(-10deg);
+    left: 20%;
+    top: 30%;
+    transform: rotate(8deg);
 }
 
 .gem-heart {
-    width: 70px;
-    left: 66%;
-    top: 46%;
+    width: 85px;
+    left: 70%;
+    top: 20%;
     transform: rotate(12deg);
 }
 
 .gem-butterfly {
     width: 80px;
-    left: 50%;
-    top: 62%;
+    left: 47%;
+    top: 55%;
     transform: translateX(-50%) rotate(-8deg);
     z-index: 3;
 }
 
 .gem-flower-purple {
-    width: 74px;
-    left: 22%;
-    top: 70%;
+    width: 80px;
+    left: 20%;
+    top: 60%;
     transform: rotate(-14deg);
 }
 
 .gem-cloud {
     width: 86px;
     left: 73%;
-    top: 70%;
-    transform: rotate(8deg);
+    top: 60%;
+    transform: rotate(1deg);
 }
 
 .gem-triangle {
-    width: 72px;
-    left: 81%;
-    top: 52%;
-    transform: rotate(-18deg);
+    width: 65px;
+    left: 80%;
+    top: 37%;
+    transform: rotate(-89deg);
 }
 
 /* Chatbot */
