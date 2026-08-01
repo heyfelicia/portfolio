@@ -7,6 +7,16 @@
     cursor: none;
 }
 
+@font-face {
+  font-family: 'Boska-Light';
+  src: url('fonts/Boska-Light.woff2') format('woff2'),
+       url('fonts/Boska-Light.woff') format('woff'),
+       url('fonts/Boska-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -15,7 +25,7 @@ html {
 
 body {
     font-family: "IBM Plex Mono", monospace;
-    font-weight: 200;
+    font-weight: 100;
     color: #000000;
     background: #fffffe;
 }
@@ -50,23 +60,27 @@ body {
     text-decoration: none;
     color: inherit;
     text-transform: uppercase;
-    letter-spacing: .05em;
+    letter-spacing: .08em;
+    font-size: 0.8rem;      /* 12.8px */
+    font-weight: 300;
 }
 
 .nav-links {
     display: flex;
-    gap: 2.5rem;
+    gap: 2.75rem;
     list-style: none;
 }
 
 .nav-links a {
     text-decoration: none;
     color: #878787;
-    letter-spacing: .08em;
     text-transform: uppercase;
-    transition: opacity .3s;
-     font-weight: 200;
-    
+
+    font-size: 0.8rem;      /* 12.8px */
+    font-weight: 300;
+
+    letter-spacing: 0.08em;
+    transition: color .3s ease, opacity .3s ease;
 }
 
 .active a {
@@ -74,22 +88,23 @@ body {
 }
 
 .nav-links a:hover {
-    opacity: .35;
+    opacity: .45;
 }
 
 /* Hero */
 
 #hero {
-     position: relative;
-    min-height: calc(100vh - 90px);
-    width: 100%;             
+     
+    position: relative;
+    min-height: calc(100vh - 90px);          
     max-width: 900px;       
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 2rem;
-    margin: 0 auto;        
+    padding: 0 2rem;      
     box-sizing: border-box; 
+    margin: 25px auto;
+    
 }
 
 .hero-content {
@@ -99,18 +114,17 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    transform: translateY(-40px);
-    margin: 20px auto;
 }
 
 #hero h1 {
     max-width: 950px;
-    font-size: clamp(8rem, 11vw, 10rem);
+    font-size: clamp(6rem, 9vw, 8em);
     line-height: 1.1;
     letter-spacing: .2px;
     font-family: ivypresto-display, serif;
     font-weight: 100;
     margin-bottom: 2.5rem;
+
 }
 
 #hero p {
@@ -119,7 +133,6 @@ body {
     font-size: .875rem;
     line-height: 1.9;
     letter-spacing: .08em;
-    text-transform: uppercase;
 }
 
 .hero-button {
@@ -171,7 +184,7 @@ body {
 }
 
 .gem-moon {
-    width: 90px;
+    width: 80px;
     left: 20%;
     top: 30%;
     transform: rotate(8deg);
@@ -217,8 +230,8 @@ body {
 
 .chatbot {
     position: fixed;
-    bottom: 40px;
-    right: 40px;
+    bottom: 30px;
+    right: 30px;
     display: flex;
     align-items: center;
     gap: 14px;
