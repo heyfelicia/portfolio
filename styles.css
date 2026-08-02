@@ -297,13 +297,13 @@ body {
 
 .chatbot {
     position: fixed;
-    bottom: 40px;
-    right: 40px;
+    bottom: 35px;
+    right: 35px;
     display: flex;
     align-items: center;
     gap: 14px;
     padding: 20px;
-    background: #443733;
+    background: #d35c9b;
     border:none;
     border-radius: 50%;
     font-size: .875rem;
