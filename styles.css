@@ -26,7 +26,7 @@ body {
     position: fixed;
     width: 5px;
     height: 5px;
-    background:  #d35c9b;
+    background:   #D77A9A;
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);
@@ -45,7 +45,7 @@ body {
     align-items: center;
     padding: 2.5rem 4rem;
     font-size: 0.9rem;
-    margin-bottom:100px;
+    margin-bottom:60px;
 }
 
 .logo {
@@ -192,7 +192,7 @@ footer ul.footer-links a:hover {
     align-items: center;
     gap: 14px;
     padding: 20px;
-    background: #d35c9b;
+    background: #D77A9A;
     border:none;
     border-radius: 50%;
     font-size: .875rem;

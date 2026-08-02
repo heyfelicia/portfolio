@@ -55,24 +55,6 @@
 }
 
 
-
-.bio-footer {
-    margin-top: 4rem;
-
-    text-transform: uppercase;
-    letter-spacing: .14em;
-    font-size: .72rem;
-    line-height: 2;
-}
-
-.bio-footer .stars {
-    color: #ddb35d;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
-
-
 .bio-image {
     flex: 1;
 
@@ -106,6 +88,10 @@
     z-index: 5;
 }
 
+a {
+    color: #878787;
+    text-decoration: none;
+}
 
 
 @media (max-width: 900px) {
