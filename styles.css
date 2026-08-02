@@ -16,7 +16,7 @@ html {
 body {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 100;
-    color: #443733;
+    color: #50352d;
     background: #fffffe;
 }
 
@@ -26,7 +26,7 @@ body {
     position: fixed;
     width: 5px;
     height: 5px;
-    background: #0f100c;
+    background:  #d35c9b;
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);
@@ -45,6 +45,7 @@ body {
     align-items: center;
     padding: 2.5rem 4rem;
     font-size: 0.9rem;
+    margin-bottom:100px;
 }
 
 .logo {
@@ -78,259 +79,12 @@ body {
     opacity: .35;
 }
 
-/* Hero */
 
-#hero {
-     position: relative;
-    min-height: calc(100vh - 90px);
-    width: 100%;             
-    max-width: 900px;       
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2rem;
-    margin: 0 auto;        
-    box-sizing: border-box; 
-}
-
-  .hero-content {
-    position: relative;
-    z-index: 0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-    transform: translateY(-40px);
-
-    gap: 1.75rem;
-}
-
-
-#hero h1 {
-    max-width: 950px;
-    font-size: clamp(6rem, 9vw, 8rem);
-    line-height: 1.1;
-    letter-spacing: .2px;
-    font-family: ivypresto-display, serif;
-    font-weight: 100;
-}
-
-#hero p {
-    max-width: 420px;
-    margin-top: .5rem;
-    font-size: .875rem;
-    line-height: 1.9;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-}
-
-.hero-button {
-    text-decoration: none;
-    font-size: .9375rem;
-    text-transform: uppercase;
-    border-bottom: 1px solid #e6ba69;
-    line-height: 1.9;
-    padding-bottom: .25rem;
-    transition: opacity .3s;
-     color: #443733;
-}
-
-.hero-button:hover {
-    opacity: .6;
-}
-
-/* Gems */
-
-/* Gems Container */
-.gems {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    pointer-events: none; 
-}
-
-/* Individual Gem Baseline */
-.gem {
-    position: absolute;
-    height: auto;
-    will-change: transform;
-    pointer-events: auto; 
-}
-
-.gem-flower-green {
-    width: 74px;
-    left: 39%;
-    top: 8%;
-    transform: rotate(-18deg);
-}
-
-.gem-ruby {
-    width: 62px;
-    left: 67%;
-    top: 13%;
-    transform: rotate(18deg);
-}
-
-.gem-moon {
-    width: 90px;
-    left: 20%;
-    top: 30%;
-    transform: rotate(8deg);
-}
-
-.gem-heart {
-    width: 85px;
-    left: 70%;
-    top: 20%;
-    transform: rotate(12deg);
-}
-
-.gem-butterfly {
-    width: 80px;
-    left: 47%;
-    top: 55%;
-    transform: translateX(-50%) rotate(-8deg);
-    z-index: 3;
-}
-
-.gem-flower-purple {
-    width: 80px;
-    left: 20%;
-    top: 60%;
-    transform: rotate(-14deg);
-}
-
-.gem-cloud {
-    width: 86px;
-    left: 73%;
-    top: 60%;
-    transform: rotate(1deg);
-}
-
-.gem-triangle {
-    width: 65px;
-    left: 80%;
-    top: 37%;
-    transform: rotate(-89deg);
-}
-
-/* Archive */
-
-
-#archive {
-    width: min(1450px, 92%);
-    margin: 0 auto;
-    padding: 10rem 0;
-}
-
-/* ---------- Heading ---------- */
-
-.archive-header {
-    margin-bottom: 5rem;
-    font-family: ivypresto-display, serif;
-}
-
-.archive-header sub {
-    display: inline-block;
-    font-size: 1.8rem;
-    color: #e6ba69;
-    border-bottom: 1px solid #e6ba69;
-    line-height: 1;
-    padding-bottom: .4rem;
-    margin-bottom: 1.5rem;
-}
-
-.archive-header h2 {
-    font-size: clamp(2.8rem, 4vw, 4rem);
-    font-weight: 100;
-    line-height: 1.1;
-}
-
-/* ---------- Projects Grid ---------- */
-
-.projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 4rem;
-
-    width: 100%;
-}
-
-/* ---------- Project Card ---------- */
-
-.project {
-    display: flex;
-    flex-direction: column;
-}
-
-.project-img {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    background: #f3f3f3;
-    overflow: hidden;
-
-}
-
-
-.project-title {
-    margin-top: 1.6rem;
-
-    font-size: .95rem;
-    text-transform: uppercase;
-    letter-spacing: .06em;
-    font-weight: 400;
-}
-
-.project-description {
-    margin-top: .75rem;
-
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #444;
-}
-
-
-
-/* Chatbot */
-
-.chatbot {
-    position: fixed;
-    bottom: 35px;
-    right: 35px;
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    padding: 20px;
-    background: #d35c9b;
-    border:none;
-    border-radius: 50%;
-    font-size: .875rem;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-    box-shadow: 0 8px 30px rgba(0,0,0,.05);
-    transition:
-        transform .35s ease,
-        box-shadow .35s ease;
-    z-index: 1000;
-}
-
-.chatbot img {
-    width: 20px;
-    height: auto;
-    flex-shrink: 0;
-}
-
-.chatbot:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 18px 40px rgba(0,0,0,.08);
-}
 
 
 /* --- Footer Container --- */
 footer.editorial-footer {
-  background-color: #1d1715;; 
+  background-color: #1f1716;; 
   color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -424,4 +178,40 @@ footer ul.footer-links a:hover {
 
 .footer-form button[type="submit"]:hover {
   opacity: 0.7;
+}
+
+
+
+/* Chatbot */
+
+.chatbot {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 20px;
+    background: #d35c9b;
+    border:none;
+    border-radius: 50%;
+    font-size: .875rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    box-shadow: 0 8px 30px rgba(0,0,0,.05);
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+    z-index: 1000;
+}
+
+.chatbot img {
+    width: 20px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.chatbot:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 40px rgba(0,0,0,.08);
 }
