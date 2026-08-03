@@ -250,9 +250,7 @@
     }
 
     #hero h1{
-        font-size:clamp(4.8rem,11vw,6rem);
-        line-height:1;
-        margin-bottom:.35rem;
+       
     }
 
     #hero p{
@@ -265,49 +263,6 @@
     .hero-button{
         margin-top:.25rem;
         font-size:.9rem;
-    }
-
-    .gem-flower-green{
-        width:58px;
-        left:37%;
-        top:14%;
-    }
-
-    .gem-heart{
-        width:58px;
-        left:74%;
-        top:23%;
-    }
-
-    .gem-moon{
-        width:62px;
-        left:11%;
-        top:39%;
-    }
-
-    .gem-triangle{
-        width:58px;
-        left:82%;
-        top:43%;
-        transform:rotate(4deg);
-    }
-
-    .gem-cloud{
-        width:58px;
-        left:74%;
-        top:60%;
-    }
-
-    .gem-flower-purple{
-        width:58px;
-        left:18%;
-        top:73%;
-    }
-
-    .gem-butterfly{
-        width:58px;
-        left:54%;
-        top:72%;
     }
 
     #archive{
@@ -354,9 +309,7 @@
     }
 
     #hero h1{
-        font-size:clamp(5rem,16vw,6rem);
-        line-height:1.1;
-        margin-bottom:.35rem;
+        
     }
 
     #hero p{
@@ -371,49 +324,7 @@
         font-size:.85rem;
     }
 
-    .gem-flower-green{
-       width:70px;
-        left:37%;
-        top:14%;
-    }
-
-    .gem-heart{
-         width:70px;
-        left:74%;
-        top:15%;
-    }
-
-   .gem-moon{
-    width:70px;
-    left:15%;
-    top:32%;
-    transform:rotate(45deg);
-}
-
-    .gem-triangle{
-         width:70px;
-        left:70%;
-        top:38%;
-        transform:rotate(4deg);
-    }
-
-    .gem-cloud{
-         width:70px;
-        left:74%;
-        top:90%;
-    }
-
-    .gem-flower-purple{
-         width:70px;
-        left:18%;
-        top:73%;
-    }
-
-    .gem-butterfly{
-        width:70px;
-        left:54%;
-        top:72%;
-    }
+   
 
     #archive{
         width:92%;
