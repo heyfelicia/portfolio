@@ -304,8 +304,7 @@
     }
 
     .hero-content{
-        transform:translateY(24px);
-        gap:.95rem;
+
     }
 
     #hero h1{
