@@ -1,5 +1,5 @@
 :root {
-    --bg-base: #FAF6F0;
+    --bg-base: #fffffe;
     --bg-dark: #1F1817;
     --text-primary: #1F1817;
     --text-secondary: #4A423D;
@@ -47,7 +47,7 @@ footer {
     margin-bottom: 20px;
     overflow: hidden;
     border-radius: 24px;
-    background: #f5f1e6;
+    background: #f8f5ef;
     display: flex;
     flex-direction: column;
 }
