@@ -1,3 +1,5 @@
+/* --- Complete CSS Stylesheet --- */
+
 :root {
     --bg-base: #FAF6F0;
     --bg-dark: #2a1d1b;
@@ -7,7 +9,6 @@
     --accent-orange: #FF6B35;
     --accent-lime: #D2E603;
     --border-color: rgba(31, 24, 23, 0.12);
-
 
     --accent-brown: rgba(250, 246, 240, 0.07);
     --accent-brown-hover: rgba(250, 246, 240, 0.12);
@@ -506,8 +507,6 @@ footer {
     color: var(--accent-lime);
 }
 
-
-
 .chatbot {
     position: fixed;
     right: 2.5rem;
@@ -525,7 +524,6 @@ footer {
     z-index: 100;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 .chatbot::before {
     content: '';
@@ -557,7 +555,6 @@ footer {
     transform: scale(1.08);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
-
 
 /* Project Modal */
 .modal-backdrop {
@@ -621,8 +618,6 @@ footer {
 .modal-close:hover {
     transform: scale(1.1);
 }
-
-/* Chatbot */
 
 /* --- Sleek Flat Chatbot Styles --- */
 .chatbot-window {
@@ -872,31 +867,59 @@ footer {
 }
 
 
+/* --- Responsive Styles --- */
 
-
-
-
-/* Responsive Styles */
-@media (max-width: 784px), (max-width: 1024px) {
-     .hero-title {
+/* Tablet & Intermediate Screens (Up to 1024px) */
+@media (max-width: 1024px) {
+    .hero-title {
         text-align: center;
-        font-size: clamp(2rem, 10vw, 4rem);
+        font-size: clamp(2.4rem, 11vw, 5.5rem);
         line-height: 1.1;
         width: 100%;
         max-width: 100%;
     }
 }
 
+/* Mobile Screens (Up to 600px) */
 @media (max-width: 600px) {
-     .chatbot-window {
-        right: 1rem;
-        bottom: 4.5rem;
-        width: calc(100vw - 2rem);
-        height: 420px;
+    .chatbot-window {
+        position: fixed;
+        inset: auto 1rem 1rem 1rem;
+        width: auto;
+        height: 75vh;
+        max-height: 480px;
+        border-radius: 24px;
+    }
+
+    .chatbot-body {
+        max-height: calc(75vh - 130px);
+    }
+
+    .chatbot-header h3 {
+        font-size: 1.05rem;
+    }
+
+    .chat-message {
+        font-size: 0.98rem;
+        padding: 1.1rem 1.25rem;
+    }
+
+    .chat-option-btn {
+        font-size: 0.95rem;
+        padding: 1rem 1.2rem;
+    }
+
+    #chatbot-input {
+        font-size: 0.98rem;
+    }
+
+    #chatbot-form button {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.2rem;
     }
 
     #hero {
-        min-height: 75vh;
+        min-height: 78vh;
         padding-top: 2rem;
         padding-bottom: 3rem;
         margin-top: 10px;
@@ -911,12 +934,26 @@ footer {
         padding: 1.25rem 1.25rem 1.5rem;
     }
 
+    .logo {
+        font-size: 1.1rem;
+    }
+
     .nav-links {
         display: none;
     }
 
     .menu-toggle {
         display: flex;
+        width: 20px;
+        height: 14px;
+    }
+
+    .menu-toggle span {
+        height: 2.2px;
+    }
+
+    .mobile-nav-link {
+        font-size: 2.8rem;
     }
 
     .carousel-track {
@@ -938,7 +975,8 @@ footer {
         align-items: center;
     }
 
-    .hero-content {
+    .hero-content,
+    .hero-content-workshop {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -950,17 +988,18 @@ footer {
         margin: 0 auto;
     }
 
-    .hero-content-workshop {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 1.5rem 1rem 2rem;
-        gap: 1.2rem;
-        width: 100%;
+    .hero-content-workshop .hero-info p {
+        font-size: 1.05rem;
+        line-height: 1.7;
     }
 
-    .hero-left {
+    .hero-content-workshop .hero-button {
+        font-size: 0.95rem;
+        padding-bottom: 0.55rem;
+    }
+
+    .hero-left,
+    .hero-title-wrap {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -970,18 +1009,9 @@ footer {
         margin: 0 auto; 
     }
 
-    .hero-title-wrap {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 0.8rem;
-        width: 100%;
-    }
-
     .hero-title {
         text-align: center;
-        font-size: clamp(2rem, 10vw, 5rem);
+        font-size: clamp(2.6rem, 11.5vw, 5.2rem);
         line-height: 1.1;
         width: 100%;
         max-width: 100%;
@@ -996,11 +1026,14 @@ footer {
         margin: 0 auto 0.6rem;
         display: block;
         text-align: center;
+        font-size: 2.4rem;
     }
 
     .hero-flower svg {
         display: block;
         margin: 0 auto;
+        width: 26px;
+        height: 26px;
     }
 
     .hero-bottom-controls {
@@ -1013,43 +1046,82 @@ footer {
     }
 
     .carousel-controls {
-        padding: 0.4rem 0.8rem;
+        padding: 0.5rem 1.1rem;
+        gap: 1.2rem;
+    }
+
+    .carousel-arrow {
+        font-size: 1.3rem;
+    }
+
+    .dot {
+        width: 9px;
+        height: 9px;
+    }
+
+    .dot.active {
+        width: 22px;
     }
 
     .projects {
         grid-template-columns: 1fr;
-        gap: 12px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        gap: 14px;
+        margin-top: 12px;
+        margin-bottom: 12px;
     }
 
-    .project-1, .project-2, .project-3 {
+    .project-1, 
+    .project-2, 
+    .project-3 {
         grid-column: span 1;
-        min-height: 280px;
+        min-height: 300px;
     }
 
     footer {
         text-align: center;
-        padding: 2rem 1rem;
+        padding: 2.5rem 1.5rem;
         border-radius: 18px;
     }
 
     .footer-container {
         flex-direction: column;
         align-items: center;
-        gap: 1.5rem;
+        gap: 1.8rem;
+    }
+
+    .footer-brand .brand-name {
+        font-size: 1.1rem;
     }
 
     .footer-nav {
         justify-content: center;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 1.5rem;
+    }
+
+    .footer-nav a {
+        font-size: 0.95rem;
+    }
+
+    .footer-form input[type="email"] {
+        font-size: 0.98rem;
+    }
+
+    .footer-form button {
+        font-size: 0.9rem;
     }
 
     .chatbot {
-        right: 1rem;
-        bottom: 1rem;
-        width: 44px;
-        height: 44px;
+        right: 1.25rem;
+        bottom: 1.25rem;
+        width: 52px;
+        height: 52px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: clamp(2.2rem, 10.5vw, 4.2rem);
     }
 }
