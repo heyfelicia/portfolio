@@ -8,7 +8,7 @@
     --accent-lime: #D2E603;
     --border-color: rgba(31, 24, 23, 0.12);
 
-    /* Brown used for chatbot elements/sparks */
+
     --accent-brown: rgba(250, 246, 240, 0.07);
     --accent-brown-hover: rgba(250, 246, 240, 0.12);
     --accent-brown-text: rgba(250, 246, 240, 0.4);
@@ -125,7 +125,7 @@ footer {
 .menu-toggle span {
     display: block;
     width: 100%;
-    height: 1px;
+    height: 1.8px;
     background-color: var(--text-primary);
     border-radius: 2px;
     transition: var(--transition-smooth);
@@ -535,9 +535,9 @@ footer {
 .modal-backdrop {
     position: fixed;
     inset: 0;
-    background: rgba(31, 24, 23, 0.6);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    background: rgba(31, 24, 23, 0.433);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(2px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -564,7 +564,6 @@ footer {
     overflow-y: auto;
     transform: scale(0.95);
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 .modal-backdrop.open .modal-container {
@@ -799,17 +798,16 @@ footer {
     align-items: center;
     justify-content: center;
     z-index: 99999;
-    /* Slowed down even more: takes 1.8 seconds total, starting after 1.0 second */
     animation: fadeOutOverlay 1.8s ease 1.0s forwards;
     pointer-events: none;
 }
 
-/* Creates a tight, slightly offset cluster layout like an app widget */
+
 .launch-icons-container {
     display: grid;
     grid-template-columns: repeat(2, 40px);
     gap: 10px;
-    /* Gentle, slow scaling animation */
+
     animation: scaleUpSplash 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
@@ -819,7 +817,7 @@ footer {
     object-fit: contain;
 }
 
-/* Organic, imperfect cluster placement */
+
 .launch-icon:nth-child(1) { transform: translate(-3px, 3px); }
 .launch-icon:nth-child(2) { transform: translate(3px, -3px); }
 .launch-icon:nth-child(3) { transform: translate(-4px, -3px); }
@@ -850,6 +848,16 @@ footer {
     }
 }
 
+@media (max-width: 784px), (max-width: 1024px) {
+     .hero-title {
+        text-align: center;
+        font-size: clamp(2rem, 10vw, 4rem);
+        line-height: 1.1;
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
 
 @media (max-width: 600px) {
 
@@ -946,7 +954,7 @@ footer {
 
     .hero-title {
         text-align: center;
-        font-size: clamp(2rem, 7.5vw, 2.6rem);
+        font-size: clamp(2rem, 10vw, 5rem);
         line-height: 1.1;
         width: 100%;
         max-width: 100%;
