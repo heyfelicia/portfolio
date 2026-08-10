@@ -1,6 +1,5 @@
 // Carousel Logic
 
-
 document.addEventListener("DOMContentLoaded", () => {
     const slides = document.querySelectorAll(".carousel-slide");
     const dots = document.querySelectorAll(".dot");
@@ -67,42 +66,39 @@ document.addEventListener("DOMContentLoaded", () => {
 // Modal
 
 document.addEventListener("DOMContentLoaded", () => {
-            // Modal Logic
-            const modal = document.getElementById("project-modal");
-            const closeBtn = modal.querySelector(".modal-close");
-            const projects = document.querySelectorAll(".project");
+    const modal = document.getElementById("project-modal");
+    const closeBtn = modal.querySelector(".modal-close");
+    const projects = document.querySelectorAll(".project");
 
-            projects.forEach(project => {
-                project.addEventListener("click", () => {
-                    modal.classList.add("open");
-                    document.body.style.overflow = "hidden";
-                });
-            });
-
-            const closeModal = () => {
-                modal.classList.remove("open");
-                document.body.style.overflow = "";
-            };
-
-            closeBtn.addEventListener("click", closeModal);
-
-            modal.addEventListener("click", (e) => {
-                if (e.target === modal) {
-                    closeModal();
-                }
-            });
-
-            document.addEventListener("keydown", (e) => {
-                if (e.key === "Escape" && modal.classList.contains("open")) {
-                    closeModal();
-                }
-            });
+    projects.forEach(project => {
+        project.addEventListener("click", () => {
+            modal.classList.add("open");
+            document.body.style.overflow = "hidden";
         });
+    });
 
+    const closeModal = () => {
+        modal.classList.remove("open");
+        document.body.style.overflow = "";
+    };
+
+    closeBtn.addEventListener("click", closeModal);
+
+    modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && modal.classList.contains("open")) {
+            closeModal();
+        }
+    });
+});
 
 
 // Mobile Menu Logic
-
 
 const heroNav = document.querySelector('.hero-nav');
 const menuToggle = document.querySelector('.menu-toggle');
@@ -128,8 +124,6 @@ if (menuToggle && heroNav) {
         });
     });
 }
-}
-
 
 
 // ChatBot 
@@ -238,7 +232,3 @@ document.addEventListener('DOMContentLoaded', () => {
         chatMessages.scrollTop = chatMessages.scrollHeight;
     }
 });
-
-
-
-
