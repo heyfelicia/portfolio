@@ -128,8 +128,7 @@ if (menuToggle && heroNav) {
         });
     });
 }
-
-
+}
 
 
 
