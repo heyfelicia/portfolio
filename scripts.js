@@ -212,12 +212,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => {
                     const subject = encodeURIComponent(`Portfolio Inquiry: ${selectedTopic || 'General'}`);
                     const body = encodeURIComponent(`Hi Felicia,\n\nI'm reaching out via your portfolio chatbot.\n\nProject Interest: ${selectedTopic}\nDetails: ${selectedDetails}\n\nMy Email: ${userEmail}`);
-                    window.location.href = `mailto:feliciamphillips@gmail.com?subject=${subject}&body=${body}`;
+                    window.location.href = `mailto:feliciamp73@yahoo.com?subject=${subject}&body=${body}`;
                 }, 1200);
             } else {
                 // Default flow fallback
                 setTimeout(() => {
-                    appendMessage(`Thank you for reaching out. You can also contact me directly at feliciamphillips@gmail.com.`, 'bot-message');
+                    appendMessage(`Thank you for reaching out. You can also contact me directly at feliciamp73@yahoo.com.`, 'bot-message');
                 }, 600);
             }
         });
