@@ -1,3 +1,6 @@
+// Carousel Logic
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const slides = document.querySelectorAll(".carousel-slide");
     const dots = document.querySelectorAll(".dot");
@@ -61,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
+// Modal
 
 document.addEventListener("DOMContentLoaded", () => {
             // Modal Logic
@@ -95,3 +98,148 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             });
         });
+
+
+
+// Mobile Menu Logic
+
+
+const heroNav = document.querySelector('.hero-nav');
+const menuToggle = document.querySelector('.menu-toggle');
+const menuOverlay = document.querySelector('.mobile-menu-overlay');
+
+if (menuToggle && heroNav) {
+    menuToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        heroNav.classList.toggle('menu-open');
+    });
+
+    // Clicking the backdrop overlay closes the menu
+    menuOverlay.addEventListener('click', (e) => {
+        if (e.target === menuOverlay) {
+            heroNav.classList.remove('menu-open');
+        }
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            heroNav.classList.remove('menu-open');
+        });
+    });
+}
+
+
+
+
+
+// ChatBot 
+
+document.addEventListener('DOMContentLoaded', () => {
+    const chatbotToggle = document.getElementById('chatbot-toggle');
+    const chatbotWindow = document.getElementById('chatbot-container');
+    const chatbotClose = document.querySelector('.chatbot-close');
+    const chatbotForm = document.getElementById('chatbot-form');
+    const chatbotInput = document.getElementById('chatbot-input');
+    const chatMessages = document.getElementById('chatbot-messages');
+    const chatOptionsContainer = document.getElementById('chat-options-container');
+
+    let selectedTopic = '';
+    let selectedDetails = '';
+    let userEmail = '';
+    let chatStep = 'topic'; // 'topic', 'details', 'email'
+
+    // Safety check so we don't error out if elements are missing
+    if (!chatbotToggle || !chatbotWindow) return;
+
+    // Toggle open/close reliably
+    chatbotToggle.addEventListener('click', () => {
+        chatbotWindow.classList.toggle('open');
+        
+        // If opening for the first time, drop a polite and welcoming greeting
+        if (chatbotWindow.classList.contains('open') && chatMessages && chatMessages.children.length === 0) {
+            appendMessage(`Hello! Thank you for stopping by. Please select an option below or type a message to get started.`, 'bot-message');
+        }
+    });
+
+    if (chatbotClose) {
+        chatbotClose.addEventListener('click', () => {
+            chatbotWindow.classList.remove('open');
+        });
+    }
+
+    // Handle topic option clicks
+    if (chatOptionsContainer) {
+        chatOptionsContainer.addEventListener('click', (e) => {
+            const btn = e.target.closest('.chat-option-btn');
+            if (btn) {
+                selectedTopic = btn.getAttribute('data-topic');
+                appendMessage(btn.textContent.replace('✦', '').trim(), 'user-message');
+                chatOptionsContainer.style.display = 'none';
+
+                // Professional prompt with a clean reset option
+                appendMessage(`Could you please share a few brief details about what you are looking for? <br><button id="reset-topic-btn" style="background:none; border:none; color:var(--accent-orange); font-size:0.75rem; cursor:pointer; padding:0; margin-top:0.4rem; text-decoration:underline;">← Choose a different topic</button>`, 'bot-message');
+                chatStep = 'details';
+            }
+        });
+    }
+
+    // Handle dynamic reset button click
+    if (chatMessages) {
+        chatMessages.addEventListener('click', (e) => {
+            if (e.target && e.target.id === 'reset-topic-btn') {
+                selectedTopic = '';
+                selectedDetails = '';
+                chatStep = 'topic';
+                if (chatOptionsContainer) chatOptionsContainer.style.display = 'flex';
+                appendMessage(`No problem at all. Let's select another option:`, 'bot-message');
+            }
+        });
+    }
+
+    // Handle text input submission
+    if (chatbotForm) {
+        chatbotForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const text = chatbotInput.value.trim();
+            if (!text) return;
+
+            appendMessage(text, 'user-message');
+            chatbotInput.value = '';
+
+            if (chatStep === 'details') {
+                selectedDetails = text;
+                appendMessage(`Got it. Lastly, what is your email address so I can review your inquiry and get back to you?`, 'bot-message');
+                chatStep = 'email';
+            } else if (chatStep === 'email') {
+                userEmail = text;
+                appendMessage(`Thank you! Opening your email client now to send your message directly to Felicia...`, 'bot-message');
+                
+                // Redirect to email via mailto link
+                setTimeout(() => {
+                    const subject = encodeURIComponent(`Portfolio Inquiry: ${selectedTopic || 'General'}`);
+                    const body = encodeURIComponent(`Hi Felicia,\n\nI'm reaching out via your portfolio chatbot.\n\nProject Interest: ${selectedTopic}\nDetails: ${selectedDetails}\n\nMy Email: ${userEmail}`);
+                    window.location.href = `mailto:feliciamphillips@gmail.com?subject=${subject}&body=${body}`;
+                }, 1200);
+            } else {
+                // Default flow fallback
+                setTimeout(() => {
+                    appendMessage(`Thank you for reaching out. You can also contact me directly at feliciamphillips@gmail.com.`, 'bot-message');
+                }, 600);
+            }
+        });
+    }
+
+    function appendMessage(text, className) {
+        if (!chatMessages) return;
+        const msgDiv = document.createElement('div');
+        msgDiv.className = `chat-message ${className}`;
+        msgDiv.innerHTML = text;
+        chatMessages.appendChild(msgDiv);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+});
+
+
+
+
