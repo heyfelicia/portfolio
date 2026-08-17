@@ -493,7 +493,7 @@ footer {
 
 .project {
     position: absolute;
-   width: 290px;
+    width: 290px;
     height: 400px;
     border-radius: 24px;
     background-size: cover;
@@ -504,14 +504,14 @@ footer {
 }
 
 .project-1 {
-    transform: translateX(-320px) rotate(-18deg) translateY(10px);
+    transform: translateX(-350px) rotate(-18deg) translateY(10px);
     z-index: 1;
     background: #D2E603; 
     min-height: unset;
 }
 
 .project-2 {
-    transform: translateX(-160px) rotate(-8deg) translateY(-5px);
+    transform: translateX(-175px) rotate(-8deg) translateY(-5px);
     z-index: 2;
     background: #d4e7ea; 
     min-height: unset;
@@ -525,25 +525,25 @@ footer {
 }
 
 .project-4 {
-    transform: translateX(160px) rotate(8deg) translateY(-5px);
+    transform: translateX(175px) rotate(8deg) translateY(-5px);
     z-index: 4;
     background: #FF6B35;
     min-height: unset;
 }
 
 .project-5 {
-    transform: translateX(320px) rotate(18deg) translateY(10px);
+    transform: translateX(350px) rotate(18deg) translateY(10px);
     z-index: 5;
     background: #e8d0b3;
     min-height: unset;
 }
 
 .projects:hover .project-1 {
-    transform: translateX(-420px) rotate(-24deg) translateY(5px);
+    transform: translateX(-450px) rotate(-24deg) translateY(5px);
 }
 
 .projects:hover .project-2 {
-    transform: translateX(-210px) rotate(-12deg) translateY(-15px);
+    transform: translateX(-225px) rotate(-12deg) translateY(-15px);
 }
 
 .projects:hover .project-3 {
@@ -551,11 +551,11 @@ footer {
 }
 
 .projects:hover .project-4 {
-    transform: translateX(210px) rotate(12deg) translateY(-15px);
+    transform: translateX(225px) rotate(12deg) translateY(-15px);
 }
 
 .projects:hover .project-5 {
-    transform: translateX(420px) rotate(24deg) translateY(5px);
+    transform: translateX(450px) rotate(24deg) translateY(5px);
 }
 
 .project:hover {
@@ -576,22 +576,46 @@ footer {
     border: none;
 }
 
-.about-image {
-    width: 160px;
-    height: auto;
-    border-radius: 0;
-    overflow: visible;
+.about-image-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    cursor: pointer;
 }
 
-.about-image img {
+#felicia-img {
     width: 100%;
-    height: auto;
-    object-fit: contain;
-    border-radius: 0;
+    height: 100%;
+    display: block;
+}
+
+.about-image-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#magic-star {
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    width: 50px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.shoot-star {
+    animation: shoot 0.8s ease-out forwards;
+}
+
+@keyframes shoot {
+    0% { opacity: 1; transform: translate(0, 0) rotate(0deg) scale(0); }
+    50% { opacity: 1; transform: translate(40px, -40px) rotate(45deg) scale(1.2); }
+    100% { opacity: 0; transform: translate(80px, -80px) rotate(90deg) scale(0.5); }
 }
 
 .about-content {
@@ -1001,7 +1025,6 @@ footer {
 @keyframes scaleUpSplash {
     0% {
         transform: scale(0.4) rotate(-15deg);
-        opacity: `.85`;
         opacity: 0;
     }
     60% {
@@ -1044,7 +1067,8 @@ footer {
     }
 
     .about-image {
-        width: 130px;
+        width: 64px;
+        height: 64px;
         margin: 0 auto;
     }
 
@@ -1102,7 +1126,6 @@ footer {
         padding-top: 1rem;
         padding-bottom: 2rem;
         margin-top: 0;
-        /* FIX: Ensure mobile gap matches --page-padding seamlessly */
         margin-bottom: var(--page-padding);
         border-radius: 18px;
     }
@@ -1111,7 +1134,6 @@ footer {
         width: 100%;
         max-width: 100%;
         margin-top: 0;
-        /* FIX: Match bottom spacing to --page-padding */
         margin-bottom: var(--page-padding);
         margin-left: auto;
         margin-right: auto;
@@ -1120,7 +1142,6 @@ footer {
         border: none;
         box-shadow: none;
         border-radius: 18px;
-        /* FIX: Ensure zero vertical gap by removing top padding inside projects-wrapper on mobile */
         padding: 0 0 2rem 0;
     }
 

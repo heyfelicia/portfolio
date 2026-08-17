@@ -236,3 +236,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+const imgElement = document.getElementById('felicia-img');
+const starElement = document.getElementById('magic-star');
+
+imgElement.addEventListener('click', () => {
+
+    imgElement.src = 'images/Felicia-Smile.png';
+
+
+    starElement.classList.remove('shoot-star'); 
+    void starElement.offsetWidth; 
+    starElement.classList.add('shoot-star');
+
+    setTimeout(() => {
+        imgElement.src = 'images/Felicia.png';
+    }, 2000);
+});
+
+
+
