@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link rel="stylesheet" href="https://use.typekit.net/wfd1msr.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23FF6B35'><path d='M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z'/></svg>">
@@ -44,7 +47,7 @@
         <span></span>
     </button>
 
-    <!-- Mobile Menu Overlay nested inside header so it drops down cleanly -->
+    <!-- Mobile Menu Overlay -->
     <div class="mobile-menu-overlay">
         <nav class="mobile-nav-links">
             <a href="#" class="mobile-nav-link">Work <span>  <svg width="22" height="22" viewBox="0 0 24 24" fill="#3a2e2b">
@@ -91,8 +94,8 @@
                     </div>
                     <div class="hero-info">
                        <p class="workshop-info">
-    Forget boring websites. Learn to code by creating something cute, creative, and completely your own.
-</p>
+                        Forget boring websites. Learn to code by creating something cute, creative, and completely your own.
+                       </p>
                         <a href="#" class="hero-button">Sign Up <span>→</span></a>     
                     </div>
                 </div>
@@ -112,10 +115,15 @@
     </section>
 
 
+    <!-- Projects Wrapper -->
     <section class="projects-wrapper">
 
+        <!-- Decorative Icons -->
         <img src="images/Cherry.svg" alt="Cherry" class="deco-icon deco-cherry">
         <img src="images/Star.svg" alt="Star" class="deco-icon deco-star">
+       
+        <div class="comment-pill pill-1">✨ click to explore</div>
+        <div class="comment-pill pill-2"> portfolio work</div>
 
         <div class="projects">
             <div class="project project-1"></div>
@@ -126,6 +134,17 @@
         </div>
     </section>
 
+    <!-- New About Me Section -->
+   <section class="about-section">
+    <div class="about-image">
+        <img src="images/Felicia.svg" alt="Felicia Phillips">
+    </div>
+    <div class="about-content">
+        <h2>About Felicia</h2>
+        <p>Hi, I'm Felicia! I'm a designer and developer passionate about crafting cute, creative digital experiences. I love bridging the gap between artistic illustration and functional code to bring unique ideas to life.</p>
+    </div>
+</section>
+    <!-- End New Section -->
 
     <footer>
         <div class="footer-container">
@@ -133,16 +152,16 @@
                 <a href="#" class="brand-name">Felicia Phillips</a>
             </div>
             <nav class="footer-nav">
-                <a href="https://www.youtube.com/@heyxfelicia" target="_blank" rel="noopener noreferrer">Youtube</a>
-                <a href="https://www.linkedin.com/in/feliciamphillips/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://www.instagram.com/__heyfelicia/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.youtube.com/@heyxfelicia" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/feliciamphillips/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/__heyfelicia/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
             </nav>
-            <div class="footer-form">
-                <div class="input-group">
-                    <input type="email" placeholder="Enter your email">
-                    <button type="submit">Subscribe</button>
-                </div>
-            </div>
         </div>
     </footer>
 
