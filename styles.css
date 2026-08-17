@@ -1067,12 +1067,13 @@ footer {
     }
 
     .about-image {
-        width: 64px;
-        height: 64px;
+        width: 30px;
+        height: 30px;
         margin: 0 auto;
     }
 
     .about-content {
+        display:none;
         align-items: center;
         text-align: center;
     }
