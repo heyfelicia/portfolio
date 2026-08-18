@@ -33,35 +33,35 @@
 
     <!-- Hero Section -->
     <section id="hero">
-       <header class="hero-nav">
-    <a href="#" class="logo">Felicia Phillips</a>
-    <nav class="nav-links">
-        <a href="#" class="nav-link">Work</a>
-        <a href="#" class="nav-link">About</a>
-        <a href="#" class="nav-link">Contact</a>
-    </nav>
-    
-    <!-- Hamburger Toggle Button -->
-    <button class="menu-toggle" aria-label="Toggle navigation menu">
-        <span></span>
-        <span></span>
-    </button>
+        <header class="hero-nav">
+            <a href="#" class="logo">Felicia Phillips</a>
+            <nav class="nav-links">
+                <a href="#" class="nav-link">Work</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Contact</a>
+            </nav>
+            
+            <!-- Hamburger Toggle Button -->
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+            </button>
 
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu-overlay">
-        <nav class="mobile-nav-links">
-            <a href="#" class="mobile-nav-link">Work <span>  <svg width="22" height="22" viewBox="0 0 24 24" fill="#3a2e2b">
-            <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" />
-        </svg></span></a>
-            <a href="#" class="mobile-nav-link">About <span>  <svg width="22" height="22" viewBox="0 0 24 24" fill="#3a2e2b">
-            <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" />
-        </svg></span></a>
-            <a href="#" class="mobile-nav-link">Contact <span>  <svg width="22" height="22" viewBox="0 0 24 24" fill="#3a2e2b">
-            <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" />
-        </svg></span></a>
-        </nav>
-    </div>
-</header>
+            <!-- Mobile Menu Overlay -->
+            <div class="mobile-menu-overlay">
+                <nav class="mobile-nav-links">
+                    <a href="#" class="mobile-nav-link">Work <span>  <svg width="22" height="22" viewBox="0 0 24 24" fill="#3a2e2b">
+                    <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" />
+                </svg></span></a>
+                    <a href="#" class="mobile-nav-link">About <span>  <svg width="22" height="22" viewBox="0 0 24 24" fill="#3a2e2b">
+                    <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" />
+                </svg></span></a>
+                    <a href="#" class="mobile-nav-link">Contact <span>  <svg width="22" height="22" viewBox="0 0 24 24" fill="#3a2e2b">
+                    <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" />
+                </svg></span></a>
+                </nav>
+            </div>
+        </header>
 
         <div class="carousel-track">
             <!-- Slide 1 -->
@@ -114,7 +114,6 @@
         </div>
     </section>
 
-
     <!-- Projects Wrapper -->
     <section class="projects-wrapper">
 
@@ -134,18 +133,13 @@
         </div>
     </section>
 
-    <!-- New About Me Section
- <section class="about-section">
-    <div class="about-image-container">
-        <img src="images/Felicia.png" alt="Felicia Phillips" id="felicia-img">
-        <img src="images/Star.svg" alt="Star" id="magic-star" class="hidden">
-    </div> -->
-  <!--   <div class="about-content">
-        <h2>About Felicia</h2>
-        <p>Hi, I'm Felicia! I'm a designer and developer passionate about crafting cute, creative digital experiences. I love bridging the gap between artistic illustration and functional code to bring unique ideas to life.</p>
-    </div> -->
-</section>  
-    <!-- End New Section --> 
+    <!-- Thank You Section -->
+    <section class="about-section">
+        <div class="about-content">
+            <h2>Thank You!</h2>
+            <p>Thanks for stopping by and taking a look through my work.</p>
+        </div>
+    </section>  
 
     <footer>
         <div class="footer-container">
@@ -201,14 +195,137 @@
         </svg>
     </button>
 
-    <!-- Project Modal -->
+    <!-- Project Modal (Unified Masonry Grid Template) -->
     <div id="project-modal" class="modal-backdrop">
         <div class="modal-container">
             <button class="modal-close" aria-label="Close modal">&times;</button>
-            <div class="modal-body">
-                <h2>Project Details</h2>
-                <p>Detailed project information goes here...</p>
+            
+            <div class="modal-grid">
+                <!-- Left Sidebar: Title & Metadata -->
+                <div class="modal-sidebar">
+                    <div class="project-header">
+                        <h2 class="project-title">Project Title 
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="project-flower-icon">
+                                <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="var(--accent-orange)" stroke="none"/>
+                            </svg>
+                        </h2>
+                        <p class="project-category">PROJECT CATEGORY</p>
+                    </div>
+
+                    <p class="project-desc">Placeholder text describing the core concept, goals, and vision of the project.</p>
+                    
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <strong>ROLE</strong>
+                            <span>Placeholder Role</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>TOOLS</strong>
+                            <span>Tools Used</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>YEAR</strong>
+                            <span>202X</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>DELIVERABLES</strong>
+                            <span>Design Assets, Concept, Code</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>CATEGORY</strong>
+                            <span>General Category</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Center Main Content Area -->
+                <div class="modal-main">
+                    <div class="placeholder-block hero-img main-bg"></div>
+                    
+                    <div class="main-bottom-images two-col">
+                        <div class="placeholder-block main-bg"></div>
+                        <div class="placeholder-block main-bg"></div>
+                    </div>
+
+                    <div class="placeholder-block extra-main-img main-bg"></div>
+                    <div class="placeholder-block extra-main-img-secondary main-bg"></div>
+                </div>
+
+                <!-- Right Column: Design Notes, Strategy & Carousel Tracks -->
+                <div class="modal-right process-notes-column">
+                    <div class="design-notes-header">
+                        <span class="notes-title">Process & Strategy</span>
+                    </div>
+
+                    <!-- The Challenge -->
+                    <div class="process-card challenge-card">
+                        <span class="process-step">THE CHALLENGE</span>
+                        <p class="process-text">Placeholder text outlining the core obstacle or design problem addressed in this project.</p>
+                    </div>
+
+                    <!-- Mood & Vibe Carousel Track -->
+                    <div class="process-card">
+                        <span class="process-step">MOOD & VIBE</span>
+                        <div class="process-scroll-track" onclick="nextModalSlide(this)">
+                            <div class="process-image-wrap active">
+                                <img src="images/placeholder-moodboard-1.png" alt="Mood board 1" class="process-sketch-img">
+                            </div>
+                            <div class="process-image-wrap">
+                                <img src="images/placeholder-moodboard-2.png" alt="Mood board 2" class="process-sketch-img">
+                            </div>
+                            <div class="process-image-wrap">
+                                <img src="images/placeholder-moodboard-3.png" alt="Mood board 3" class="process-sketch-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 01: The Idea Carousel Track -->
+                    <div class="process-card">
+                        <span class="process-step">01 &nbsp; THE IDEA</span>
+                        <p class="process-text">Concept spark and layout direction.</p>
+                        <div class="process-scroll-track" onclick="nextModalSlide(this)">
+                            <div class="process-image-wrap active">
+                                <img src="images/placeholder-sketch-1.png" alt="Idea sketch 1" class="process-sketch-img">
+                            </div>
+                            <div class="process-image-wrap">
+                                <img src="images/placeholder-sketch-1-alt.png" alt="Idea sketch 2" class="process-sketch-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 02: Early Exploration Carousel Track -->
+                    <div class="process-card">
+                        <span class="process-step">02 &nbsp; EARLY EXPLORATION</span>
+                        <p class="process-text">Wireframing iterations and structure.</p>
+                        <div class="process-scroll-track" onclick="nextModalSlide(this)">
+                            <div class="process-image-wrap active">
+                                <img src="images/placeholder-sketch-2.png" alt="Wireframe 1" class="process-sketch-img">
+                            </div>
+                            <div class="process-image-wrap">
+                                <img src="images/placeholder-sketch-2-alt.png" alt="Wireframe 2" class="process-sketch-img">
+                            </div>
+                            <div class="process-image-wrap">
+                                <img src="images/placeholder-sketch-2-alt2.png" alt="Wireframe 3" class="process-sketch-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 03: Why This Direction? Carousel Track -->
+                    <div class="process-card">
+                        <span class="process-step">03 &nbsp; WHY THIS DIRECTION?</span>
+                        <p class="process-text">Final visual balance reflections.</p>
+                        <div class="process-scroll-track" onclick="nextModalSlide(this)">
+                            <div class="process-image-wrap active">
+                                <img src="images/placeholder-sketch-3.png" alt="Final layout 1" class="process-sketch-img">
+                            </div>
+                            <div class="process-image-wrap">
+                                <img src="images/placeholder-sketch-3-alt.png" alt="Final layout 2" class="process-sketch-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 

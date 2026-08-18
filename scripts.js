@@ -255,3 +255,21 @@ imgElement.addEventListener('click', () => {
 
 
 
+
+
+
+
+function nextModalSlide(track) {
+    const slides = track.querySelectorAll('.process-image-wrap');
+    let activeIndex = 0;
+
+    slides.forEach((slide, index) => {
+        if (slide.classList.contains('active')) {
+            activeIndex = index;
+        }
+    });
+
+    slides[activeIndex].classList.remove('active');
+    const nextIndex = (activeIndex + 1) % slides.length;
+    slides[nextIndex].classList.add('active');
+}
