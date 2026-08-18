@@ -423,6 +423,15 @@ footer {
     animation-delay: 2s;
 }
 
+
+.flower {
+    top: 25em;
+    right: 85%;
+    transform: rotate(30deg);
+    width: 120px;
+    height: 120px;
+}
+
 @keyframes floatDeco {
     0%, 100% { transform: translateY(0) rotate(0deg); }
     50% { transform: translateY(-8px) rotate(5deg); }
@@ -1670,6 +1679,5 @@ footer {
     .footer-container{
         display:flex;
         flex-direction: column;
-        gap:20px;
     }
 }
