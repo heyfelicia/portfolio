@@ -1,6 +1,6 @@
 :root {
     --bg-base: #FFFFFF;
-    --bg-dark: #261920;
+    --bg-dark: #35201f;
     --text-primary: #54223B;
     --text-secondary: #7A4962;
     --accent-orange: #FF5A36;
@@ -55,9 +55,9 @@ footer {
     margin-top: 0;
     overflow: hidden;
     border-radius: 24px;
-    background: #fbfafe;
     display: flex;
     flex-direction: column;
+    background-color: #f7f6f544;
 }
 
 #hero::after {
@@ -107,7 +107,7 @@ footer {
 }
 
 .nav-link:hover {
-    color: var(--accent-orange);
+    color: #FF8AD8;;
 }
 
 .menu-toggle {
@@ -391,7 +391,7 @@ footer {
     flex-direction: column;
     border-radius: 24px;
     padding: 3.5rem 0;
-     background: #fbfafe;
+     background-color: #f7f6f544;
 }
 
 .deco-icon {
@@ -414,6 +414,13 @@ footer {
 .deco-star {
     top: 10em;
     right: 50%;
+    transform: rotate(12deg);
+    animation-delay: 2s;
+}
+
+.deco-star2 {
+    bottom: 10rem;
+    right: 10%;
     transform: rotate(12deg);
     animation-delay: 2s;
 }
@@ -521,7 +528,7 @@ footer {
 .project-3 {
     transform: translateX(0px) rotate(0deg) translateY(-15px);
     z-index: 3;
-    background: var(--bg-dark);
+
     background-image: url('images/Amorous.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -531,13 +538,20 @@ footer {
 .project-4 {
     transform: translateX(175px) rotate(8deg) translateY(-5px);
     z-index: 4;
-    background: var(--accent-orange);
+
+  background: var(--accent-pink);
+   
+
 }
 
 .project-5 {
     transform: translateX(350px) rotate(18deg) translateY(10px);
     z-index: 5;
-    background: var(--accent-pink);
+
+     background-image: url('images/wev.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
 }
 
 .projects:hover .project-1 {
@@ -562,7 +576,6 @@ footer {
 
 .project:hover {
     z-index: 10;
-    box-shadow: 0 30px 60px rgba(84, 34, 59, 0.12);
 }
 
 .about-section {
@@ -573,7 +586,6 @@ footer {
     text-align: center;
     gap: 2rem;
     padding: 4rem var(--page-padding);
-     background: #fbfafe;
     border-radius: 24px;
     border: none;
 }
@@ -646,7 +658,7 @@ footer {
 }
 
 .footer-nav a:hover {
-    color: var(--accent-orange);
+    color: #FF8AD8;
     transform: translateY(-2px);
 }
 
