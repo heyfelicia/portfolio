@@ -3,7 +3,6 @@
     --bg-dark: #2e2a34;
     --text-primary: #2e2a34;
     --text-secondary: #494352;
-    --accent-orange: #ff8064;
     --accent-pink: #FF8AD8;
     --accent-blue: #9ECBFF;
     --accent-lime: #F3F7C4;
@@ -163,7 +162,7 @@ footer {
 }
 
 .mobile-nav-link:hover {
-    color: var(--accent-orange);
+    color: #FF8AD8;
     font-style: italic;
 }
 
@@ -247,7 +246,7 @@ footer {
     left: auto;
     top: auto;
     margin-bottom: 0.5rem;
-    color: var(--accent-orange);
+    color: #FF8AD8;
     font-size: 2rem;
     display: block;
     text-align: center;
@@ -354,7 +353,7 @@ footer {
 }
 
 .carousel-arrow:hover {
-    color: var(--accent-orange);
+    color: #FF8AD8;
 }
 
 .carousel-dots {
@@ -496,7 +495,7 @@ footer {
 .project-5 {
     grid-column: span 12;
     height: 360px;
-    background: var(--accent-orange);
+    background: #FF8AD8;
 }
 
 .project:hover {
@@ -771,8 +770,8 @@ footer {
     background-color: rgb(252, 240, 255);
 }
 
-.accent-bg-orange {
-    background-color: var(--accent-orange);
+.accent-bg-#FF8AD8 {
+    background-color: #FF8AD8;
 }
 
 .sidebar-bottom-img {
