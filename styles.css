@@ -1,8 +1,8 @@
 :root {
     --bg-base: #FFFFFF;
-    --bg-dark: #35201f;
-    --text-primary: #54223B;
-    --text-secondary: #7A4962;
+    --bg-dark: #2e2a34;
+    --text-primary: #2e2a34;
+    --text-secondary: #494352;
     --accent-orange: #ff8064;
     --accent-pink: #FF8AD8;
     --accent-blue: #9ECBFF;
@@ -968,7 +968,7 @@ footer {
 
 .chatbot-close:hover {
     background: var(--accent-brown-hover);
-    color: var(--accent-orange);
+    color: var(--accent-pink);
 }
 
 .chatbot-body {
@@ -991,14 +991,14 @@ footer {
 }
 
 .bot-message {
-    background: #593c4a;
+    background:#494352;
     color: var(--bg-base);
     align-self: flex-start;
     border-top-left-radius: 6px;
 }
 
 .user-message {
-    background: var(--accent-orange);
+    background: var(--accent-pink);
     color: white;
     align-self: flex-end;
     border-top-right-radius: 6px;
@@ -1037,6 +1037,7 @@ footer {
     box-sizing: border-box;
     word-break: break-word;
 }
+
 
 .chatbot-option-card span,
 .chat-suggestion-btn span,
@@ -1109,7 +1110,7 @@ footer {
 }
 
 #chatbot-form button {
-    background: var(--accent-orange);
+    background:var(--accent-pink);
     color: white;
     border: none;
     padding: 0.6rem 1.1rem;

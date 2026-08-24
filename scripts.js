@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 chatOptionsContainer.style.display = 'none';
 
                 // Professional prompt with a clean reset option
-                appendMessage(`Could you please share a few brief details about what you are looking for? <br><button id="reset-topic-btn" style="background:none; border:none; color:var(--accent-orange); font-size:0.75rem; cursor:pointer; padding:0; margin-top:0.4rem; text-decoration:underline;">← Choose a different topic</button>`, 'bot-message');
+                appendMessage(`Could you please share a few brief details about what you are looking for? <br><button id="reset-topic-btn" style="background:none; border:none; color:var(--accent-pink); font-size:0.75rem; cursor:pointer; padding:0; margin-top:0.4rem; text-decoration:underline;">← Choose a different topic</button>`, 'bot-message');
                 chatStep = 'details';
             }
         });
