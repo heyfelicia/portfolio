@@ -389,7 +389,7 @@ footer {
     display: flex;
     flex-direction: column;
     border-radius: 24px;
-    padding: 3.5rem var(--page-padding);
+    padding: 1rem var(--page-padding);
     background-color: #f7f6f544;
 }
 
