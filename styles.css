@@ -1,14 +1,16 @@
 :root {
-    --bg-base: #FAF6F0;
-    --bg-dark: #2a1d1b;
-    --text-primary: #452519;
-    --text-secondary: #4A423D;
-    --accent-orange: #FF6B35;
-    --accent-lime: #D2E603;
-    --border-color: rgba(31, 24, 23, 0.12);
-    --accent-brown: rgba(250, 246, 240, 0.07);
-    --accent-brown-hover: rgba(250, 246, 240, 0.12);
-    --accent-brown-text: rgba(250, 246, 240, 0.4);
+    --bg-base: #FFFFFF;
+    --bg-dark: #412b36;
+    --text-primary: #54223B;
+    --text-secondary: #7A4962;
+    --accent-orange: #FF5A36;
+    --accent-pink: #FF8AD8;
+    --accent-blue: #9ECBFF;
+    --accent-lime: #F3F7C4;
+    --border-color: rgba(84, 34, 59, 0.08);
+    --accent-brown: rgba(84, 34, 59, 0.04);
+    --accent-brown-hover: rgba(84, 34, 59, 0.08);
+    --accent-brown-text: rgba(84, 34, 59, 0.4);
     --font-heading: "Instrument Serif", Georgia, serif;
     --font-sans: "Neulis", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
     --font-mono: "Neulis Sans", "Neulis Monospaced", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
@@ -17,7 +19,6 @@
     --page-padding: clamp(1rem, 3vw, 2.5rem);
 }
 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -25,7 +26,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: var(--bg-base);
     color: var(--text-primary);
     font-family: var(--font-sans);
     line-height: 1.6;
@@ -54,7 +55,7 @@ footer {
     margin-top: 0;
     overflow: hidden;
     border-radius: 24px;
-    background: #fbfaf9;
+    background: #fbfafe;
     display: flex;
     flex-direction: column;
 }
@@ -237,8 +238,9 @@ footer {
 }
 
 .hero-title em {
+    font-style: normal;
+    color:var(--accent-pink);
     font-style: italic;
-    color: var(--accent-orange);
 }
 
 .hero-flower {
@@ -306,7 +308,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: .08em;
     padding-bottom: .45rem;
-    border-bottom: 2px solid var(--accent-orange);
+    border-bottom: 2px solid var(--accent-pink);
     transition: var(--transition-smooth);
     justify-content: center;
     margin: 0 auto;
@@ -314,7 +316,7 @@ footer {
 
 .hero-content-workshop .hero-button span {
     font-size: 1rem;
-    color: var(--accent-orange);
+    color: var(--accent-pink);
     transition: transform 0.3s ease;
 }
 
@@ -337,11 +339,10 @@ footer {
     display: flex;
     align-items: center;
     gap: 1rem;
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.9);
     padding: 0.6rem 1rem;
     border-radius: 9999px;
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
 }
 
 .carousel-arrow {
@@ -367,14 +368,14 @@ footer {
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: rgba(31, 24, 23, 0.25);
+    background: rgba(84, 34, 59, 0.2);
     border: none;
     cursor: pointer;
     transition: var(--transition-smooth);
 }
 
 .dot.active {
-    background: var(--accent-orange);
+    background: var(--accent-pink);
     width: 18px;
     border-radius: 10px;
 }
@@ -390,13 +391,7 @@ footer {
     flex-direction: column;
     border-radius: 24px;
     padding: 3.5rem 0;
-    background: #fbfaf9;
-    background-image: 
-        linear-gradient(to right, rgba(69, 37, 25, 0.06) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(69, 37, 25, 0.06) 1px, transparent 1px),
-        radial-gradient(circle, rgba(69, 37, 25, 0.09) 1px, transparent 1px);
-    background-size: 40px 40px, 40px 40px, 40px 40px;
-    background-position: -1px -1px;
+     background: #fbfafe;
 }
 
 .deco-icon {
@@ -423,7 +418,6 @@ footer {
     animation-delay: 2s;
 }
 
-
 .flower {
     top: 25em;
     right: 85%;
@@ -434,7 +428,7 @@ footer {
 
 @keyframes floatDeco {
     0%, 100% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-8px) rotate(5deg); }
+    50% { transform: translateY(-30px) rotate(5deg); }
 }
 
 .comment-pill {
@@ -515,39 +509,36 @@ footer {
 .project-1 {
     transform: translateX(-350px) rotate(-18deg) translateY(10px);
     z-index: 1;
-    background: #D2E603; 
-    min-height: unset;
+    background: var(--accent-lime);
 }
 
 .project-2 {
     transform: translateX(-175px) rotate(-8deg) translateY(-5px);
     z-index: 2;
-    background: #d4e7ea; 
-    min-height: unset;
+    background: var(--accent-blue);
 }
 
 .project-3 {
     transform: translateX(0px) rotate(0deg) translateY(-15px);
     z-index: 3;
-    background: #221411; 
-    min-height: unset;
+    background: var(--bg-dark);
+    background-image: url('images/Amorous.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
 }
 
 .project-4 {
     transform: translateX(175px) rotate(8deg) translateY(-5px);
     z-index: 4;
-    background: #FF6B35;
-    min-height: unset;
+    background: var(--accent-orange);
 }
 
 .project-5 {
     transform: translateX(350px) rotate(18deg) translateY(10px);
     z-index: 5;
-    background: #E2CBFF;
-    min-height: unset;
+    background: var(--accent-pink);
 }
-
-
 
 .projects:hover .project-1 {
     transform: translateX(-450px) rotate(-24deg) translateY(5px);
@@ -571,7 +562,7 @@ footer {
 
 .project:hover {
     z-index: 10;
-    box-shadow: 0 30px 60px rgba(42, 29, 27, 0.101);
+    box-shadow: 0 30px 60px rgba(84, 34, 59, 0.12);
 }
 
 .about-section {
@@ -582,7 +573,7 @@ footer {
     text-align: center;
     gap: 2rem;
     padding: 4rem var(--page-padding);
-    background: #fbfaf9;
+     background: #fbfafe;
     border-radius: 24px;
     border: none;
 }
@@ -666,7 +657,7 @@ footer {
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    background-color: var(--accent-lime);
+    background-color: var(--accent-pink);
     color: var(--bg-dark);
     border: none;
     display: flex;
@@ -682,7 +673,7 @@ footer {
     position: absolute;
     inset: -4px;
     border-radius: 50%;
-    background-color: var(--accent-lime);
+    background-color: var(--accent-pink);
     opacity: 0.4;
     z-index: -1;
     animation: chatbotPulse 2.4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
@@ -702,7 +693,7 @@ footer {
 .modal-backdrop {
     position: fixed;
     inset: 0;
-    background: rgba(31, 24, 23, 0.433);
+    background: rgba(31, 16, 24, 0.45);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     display: flex;
@@ -744,7 +735,7 @@ footer {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background-color: var(--accent-orange);
+    background-color: #FF8AD8;
     color: var(--bg-base);
     border: none;
     font-size: 1.2rem;
@@ -789,7 +780,7 @@ footer {
 }
 
 .project-category { 
-    color: var(--accent-orange); 
+    color:  #FF8AD8; 
     font-weight: 700; 
     font-size: 0.8rem;
     letter-spacing: 0.1em; 
@@ -804,7 +795,7 @@ footer {
 }
 
 .project-meta {
-    background-color: #f3f3f3;
+    background-color: #f2eff47c;
     padding: 1.5rem;
     border-radius: 16px;
     display: flex;
@@ -836,7 +827,7 @@ footer {
 }
 
 .main-bg {
-    background-color: #f3f3f3;
+    background-color: rgb(252, 240, 255);
 }
 
 .accent-bg-orange {
@@ -855,7 +846,12 @@ footer {
 }
 
 .hero-img {
-    height: 400px;
+    height: 600px;
+        background-image: url('images/Amorous.png');
+    background-size: cover;
+    background-position:top;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 
 .main-bottom-row {
@@ -893,7 +889,7 @@ footer {
 }
 
 .design-notes-header {
-    border-bottom: 2px dashed rgba(69, 37, 25, 0.15);
+    border-bottom: 2px dashed rgba(84, 34, 59, 0.15);
     padding-bottom: 0.5rem;
 }
 
@@ -913,7 +909,7 @@ footer {
     font-family: var(--font-mono);
     font-size: 0.75rem;
     font-weight: 700;
-    color: var(--accent-orange);
+    color:  #FF8AD8;
     letter-spacing: 0.05em;
 }
 
@@ -958,7 +954,6 @@ footer {
     width: 100%;
 }
 
-/* Updated Chatbot & Suggestion Card Styles */
 .chatbot-window {
     position: fixed;
     right: 2.5rem;
@@ -970,7 +965,7 @@ footer {
     color: var(--bg-base);
     border: none;
     border-radius: 28px;
-    box-shadow: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     display: flex;
     flex-direction: column;
     z-index: 1000;
@@ -1005,7 +1000,7 @@ footer {
 .chatbot-status-dot {
     width: 8px;
     height: 8px;
-    background-color: var(--accent-lime);
+    background-color: var(--accent-pink);
     border-radius: 50%;
 }
 
@@ -1056,7 +1051,7 @@ footer {
 }
 
 .bot-message {
-    background: var(--accent-brown);
+    background: #593c4a;
     color: var(--bg-base);
     align-self: flex-start;
     border-top-left-radius: 6px;
@@ -1069,7 +1064,6 @@ footer {
     border-top-right-radius: 6px;
 }
 
-/* Chatbot Quick-Action Grid (Square 2-Column Cards) */
 .chatbot-options-grid,
 .chat-suggestions,
 .chat-options {
@@ -1097,11 +1091,8 @@ footer {
     font-family: var(--font-sans);
     font-weight: 600;
     font-size: 0.9rem;
-    color: var(--text-primary);
     cursor: pointer;
     transition: var(--transition-smooth);
-    box-shadow: 0 4px 12px rgba(15, 28, 22, 0.05);
-    background: transparent;
     text-align: left;
     box-sizing: border-box;
     word-break: break-word;
@@ -1114,18 +1105,17 @@ footer {
     font-size: 1rem;
 }
 
-/* Bold, Playful Alternating Colors for the Squares */
 .chatbot-option-card:nth-child(4n-3),
 .chat-suggestion-btn:nth-child(4n-3),
 .chat-option-btn:nth-child(4n-3) {
-    background-color: var(--accent-lime);
+    background-color: var(--accent-pink);
     color: var(--text-primary);
 }
 
 .chatbot-option-card:nth-child(4n-2),
 .chat-suggestion-btn:nth-child(4n-2),
 .chat-option-btn:nth-child(4n-2) {
-    background-color: #FFD200;
+    background-color: var(--accent-blue);
     color: var(--text-primary);
 }
 
@@ -1139,17 +1129,15 @@ footer {
 .chatbot-option-card:nth-child(4n),
 .chat-suggestion-btn:nth-child(4n),
 .chat-option-btn:nth-child(4n) {
-    background-color: #E2CBFF;
+    background-color: var(--accent-lime);
     color: var(--text-primary);
 }
 
-/* Fun Hover State */
 .chatbot-option-card:hover,
 .chat-suggestion-btn:hover,
 .chat-option-btn:hover {
     transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 8px 20px rgba(15, 28, 22, 0.12);
-    background: inherit;
+    box-shadow: 0 8px 20px rgba(84, 34, 59, 0.12);
 }
 
 .chatbot-footer {
@@ -1177,7 +1165,7 @@ footer {
 }
 
 #chatbot-input::placeholder {
-    color: var(--accent-brown-text);
+    color: rgba(255, 255, 255, 0.416);
 }
 
 #chatbot-form button {
@@ -1202,7 +1190,7 @@ footer {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #faf9f5;
+    background-color: var(--bg-base);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1213,8 +1201,10 @@ footer {
 
 .launch-icons-container {
     display: grid;
-    grid-template-columns: repeat(2, 40px);
-    gap: 10px;
+    grid-template-columns: repeat(2, 60px);
+    gap: 12px;
+    justify-content: center;
+    align-content: center;
     animation: scaleUpSplash 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
@@ -1224,49 +1214,29 @@ footer {
     object-fit: contain;
 }
 
-.launch-icon:nth-child(1) { transform: translate(-3px, 3px); }
-.launch-icon:nth-child(2) { transform: translate(3px, -3px); }
-.launch-icon:nth-child(3) { transform: translate(-4px, -3px); }
-.launch-icon:nth-child(4) { transform: translate(4px, 3px); }
+.launch-icon:nth-child(1) { transform: translate(-4px, 4px) rotate(-10deg); }
+.launch-icon:nth-child(2) { transform: translate(4px, -4px) rotate(8deg); }
+.launch-icon:nth-child(3) { transform: translate(-4px, -4px) rotate(12deg); }
+.launch-icon:nth-child(4) { transform: translate(4px, 4px) rotate(-6deg); }
 
 @keyframes scaleUpSplash {
     0% {
-        transform: scale(0.4) rotate(-15deg);
+        transform: scale(0.5) rotate(-15deg);
         opacity: 0;
     }
     60% {
-        transform: scale(1.55) rotate(3deg);
+        transform: scale(1.2) rotate(2deg);
         opacity: 1;
     }
     100% {
-        transform: scale(1.5) rotate(0deg);
+        transform: scale(1) rotate(0deg);
         opacity: 1;
     }
 }
 
 @keyframes fadeOutOverlay {
-    0% { 
-        opacity: 1; 
-    }
-    100% { 
-        opacity: 0; 
-        visibility: hidden; 
-    }
-}
-
-
-
-
-
-
-
-
-
-@media (max-width: 1200px) {
-    .modal-grid {
-        grid-template-columns: 260px 1fr 240px;
-        gap: 20px;
-    }
+    0% { opacity: 1; }
+    100% { opacity: 0; visibility: hidden; }
 }
 
 @media (max-width: 1024px) {
