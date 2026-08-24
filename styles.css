@@ -3,7 +3,7 @@
     --bg-dark: #35201f;
     --text-primary: #54223B;
     --text-secondary: #7A4962;
-    --accent-orange: #FF5A36;
+    --accent-orange: #ff8064;
     --accent-pink: #FF8AD8;
     --accent-blue: #9ECBFF;
     --accent-lime: #F3F7C4;
@@ -107,7 +107,7 @@ footer {
 }
 
 .nav-link:hover {
-    color: #FF8AD8;;
+    color: #FF8AD8;
 }
 
 .menu-toggle {
@@ -238,9 +238,8 @@ footer {
 }
 
 .hero-title em {
-    font-style: normal;
-    color:var(--accent-pink);
     font-style: italic;
+    color: var(--accent-pink);
 }
 
 .hero-flower {
@@ -390,8 +389,8 @@ footer {
     display: flex;
     flex-direction: column;
     border-radius: 24px;
-    padding: 3.5rem 0;
-     background-color: #f7f6f544;
+    padding: 3.5rem var(--page-padding);
+    background-color: #f7f6f544;
 }
 
 .deco-icon {
@@ -435,148 +434,78 @@ footer {
 
 @keyframes floatDeco {
     0%, 100% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-30px) rotate(5deg); }
+    50% { transform: translateY(-15px) rotate(5deg); }
 }
 
 .comment-pill {
-    position: absolute;
-    background: #ffffff;
-    color: var(--text-primary);
-    font-family: var(--font-sans);
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-    padding: 0.45rem 0.85rem;
-    border-radius: 9999px;
-    z-index: 60;
-    pointer-events: none;
-    user-select: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    animation: floatPill 5s ease-in-out infinite;
+    display: none; 
 }
-
-.comment-pill::after {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    left: 20px;
-    width: 8px;
-    height: 8px;
-    background: #ffffff;
-    transform: rotate(45deg);
-}
-
-.pill-1 {
-    top: 35%;
-    left: calc(50% - 370px);
-    transform: rotate(-18deg);
-}
-
-.pill-2 {
-    top: 35%;
-    left: calc(50% + 250px);
-    transform: rotate(18deg);
-    animation-delay: 2.5s;
-}
-
-@keyframes floatPill {
-    0%, 100% { transform: translateY(0) rotate(var(--base-rotate, 0deg)); }
-    50% { transform: translateY(-5px) rotate(calc(var(--base-rotate, 0deg) + 2deg)); }
-}
-
-.pill-1 { --base-rotate: -18deg; }
-.pill-2 { --base-rotate: 18deg; }
 
 .projects {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 580px;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 1.5rem;
     padding: 2rem 0;
-    perspective: 1000px;
     z-index: 2;
     order: 1;
 }
 
 .project {
-    position: absolute;
-    width: 290px;
-    height: 400px;
-    border-radius: 24px;
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
     background-size: cover;
     background-position: center;
-    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: var(--transition-smooth);
     cursor: pointer;
     overflow: hidden;
 }
 
 .project-1 {
-    transform: translateX(-350px) rotate(-18deg) translateY(10px);
-    z-index: 1;
-    background: var(--accent-lime);
+    grid-column: span 7;
+    height: 440px;
+   
+        background-image: url('images/Amorous.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right(-5px);
 }
 
 .project-2 {
-    transform: translateX(-175px) rotate(-8deg) translateY(-5px);
-    z-index: 2;
+    grid-column: span 5;
+    height: 440px;
     background: var(--accent-blue);
 }
 
 .project-3 {
-    transform: translateX(0px) rotate(0deg) translateY(-15px);
-    z-index: 3;
-
-    background-image: url('images/Amorous.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
+    grid-column: span 5;
+    height: 400px;
+ background: var(--accent-lime);
 }
 
 .project-4 {
-    transform: translateX(175px) rotate(8deg) translateY(-5px);
-    z-index: 4;
-
-  background: var(--accent-pink);
-   
-
+    grid-column: span 7;
+    height: 400px;
+         background-image: url('images/notebook.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
 }
 
 .project-5 {
-    transform: translateX(350px) rotate(18deg) translateY(10px);
-    z-index: 5;
-
-     background-image: url('images/wev.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-}
-
-.projects:hover .project-1 {
-    transform: translateX(-450px) rotate(-24deg) translateY(5px);
-}
-
-.projects:hover .project-2 {
-    transform: translateX(-225px) rotate(-12deg) translateY(-15px);
-}
-
-.projects:hover .project-3 {
-    transform: translateX(0px) rotate(0deg) translateY(-25px);
-}
-
-.projects:hover .project-4 {
-    transform: translateX(225px) rotate(12deg) translateY(-15px);
-}
-
-.projects:hover .project-5 {
-    transform: translateX(450px) rotate(24deg) translateY(5px);
+    grid-column: span 12;
+    height: 360px;
+    background: var(--accent-orange);
 }
 
 .project:hover {
+    transform: translateY(-8px);
     z-index: 10;
 }
+
+
+
 
 .about-section {
     position: relative;
@@ -792,7 +721,7 @@ footer {
 }
 
 .project-category { 
-    color:  #FF8AD8; 
+    color: #FF8AD8; 
     font-weight: 700; 
     font-size: 0.8rem;
     letter-spacing: 0.1em; 
@@ -859,10 +788,9 @@ footer {
 
 .hero-img {
     height: 600px;
-        background-image: url('images/Amorous.png');
+    background-image: url('images/Amorous.png');
     background-size: cover;
-    background-position:top;
-    background-size:cover;
+    background-position: top;
     background-repeat: no-repeat;
 }
 
@@ -921,7 +849,7 @@ footer {
     font-family: var(--font-mono);
     font-size: 0.75rem;
     font-weight: 700;
-    color:  #FF8AD8;
+    color: #FF8AD8;
     letter-spacing: 0.05em;
 }
 
@@ -1250,6 +1178,7 @@ footer {
     0% { opacity: 1; }
     100% { opacity: 0; visibility: hidden; }
 }
+
 
 @media (max-width: 1024px) {
     #hero {
