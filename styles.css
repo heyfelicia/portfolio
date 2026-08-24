@@ -1127,7 +1127,7 @@ footer {
 .app-launch-overlay {
     position: fixed;
     inset: 0; 
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     height: 100dvh; 
     background-color: var(--bg-base);
@@ -1135,10 +1135,21 @@ footer {
     align-items: center;
     justify-content: center;
     z-index: 99999;
-    animation: fadeOutOverlay 1.8s ease 1.0s forwards;
-    pointer-events: none;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    pointer-events: auto;
     overflow: hidden; 
 }
+
+
+body.loaded .app-launch-overlay {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
 .launch-icons-container {
     display: grid;
     grid-template-columns: repeat(2, 60px);

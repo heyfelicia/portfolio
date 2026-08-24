@@ -236,26 +236,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-const imgElement = document.getElementById('felicia-img');
-const starElement = document.getElementById('magic-star');
-
-imgElement.addEventListener('click', () => {
-
-    imgElement.src = 'images/Felicia-Smile.png';
-
-
-    starElement.classList.remove('shoot-star'); 
-    void starElement.offsetWidth; 
-    starElement.classList.add('shoot-star');
-
-    setTimeout(() => {
-        imgElement.src = 'images/Felicia.png';
-    }, 2000);
-});
-
-
-
-
 
 
 
@@ -273,3 +253,14 @@ function nextModalSlide(track) {
     const nextIndex = (activeIndex + 1) % slides.length;
     slides[nextIndex].classList.add('active');
 }
+
+
+
+
+
+window.addEventListener('load', () => {
+    // Small timeout ensures everything is painted smoothly before lifting the curtain
+    setTimeout(() => {
+        document.body.classList.add('loaded');
+    }, 1000);
+});
