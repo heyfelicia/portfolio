@@ -475,6 +475,10 @@ footer {
     grid-column: span 5;
     height: 440px;
     background: var(--accent-blue);
+    background-image: url('images/Choices.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right(-5px);
 }
 
 .project-3 {
