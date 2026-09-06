@@ -1,6 +1,6 @@
 :root {
     --bg-base: #FFFFFF;
-    --bg-dark: #2e2a34;
+    --bg-dark: #1b1b1e;
     --text-primary: #2e2a34;
     --text-secondary: #494352;
     --accent-pink: #FF8AD8;
@@ -899,15 +899,14 @@ footer {
 .chatbot-window {
     position: fixed;
     right: 2.5rem;
-    bottom: 5.5rem;
+    bottom: 6rem;
     width: 380px;
     max-width: calc(100vw - 3rem);
     height: 520px;
     background: var(--bg-dark);
     color: var(--bg-base);
     border: none;
-    border-radius: 28px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     z-index: 1000;
@@ -1028,7 +1027,7 @@ footer {
     justify-content: flex-end;
     align-items: flex-start;
     padding: 14px;
-    border-radius: 20px;
+    border-radius: 15px;
     border: none;
     font-family: var(--font-sans);
     font-weight: 600;
