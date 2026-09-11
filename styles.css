@@ -56,7 +56,7 @@ footer {
     border-radius: 24px;
     display: flex;
     flex-direction: column;
-    background-color: #f7f6f544;
+    background-color: white;
 }
 
 #hero::after {
@@ -389,7 +389,7 @@ footer {
     flex-direction: column;
     border-radius: 24px;
     padding: 1rem var(--page-padding);
-    background-color: #f7f6f544;
+    background-color: #ffffff;
 }
 
 .deco-icon {
@@ -445,7 +445,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 1.5rem;
-    padding: 2rem 0;
     z-index: 2;
     order: 1;
 }
@@ -484,6 +483,10 @@ footer {
     grid-column: span 5;
     height: 400px;
  background: var(--accent-lime);
+   background-image: url('images/Dress.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
 }
 
 .project-4 {
@@ -553,6 +556,7 @@ footer {
     color: var(--bg-base);
     padding: 4rem var(--page-padding);
     border-radius: 24px;
+    width:97%;
 }
 
 .footer-container {
