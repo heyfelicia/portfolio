@@ -556,14 +556,19 @@ footer {
     color: var(--bg-base);
     padding: 4rem var(--page-padding);
     border-radius: 24px;
+<<<<<<< Updated upstream
     width:100%;
+=======
+    width:auto;
+    margin:0;
+>>>>>>> Stashed changes
 }
 
 .footer-container {
     display: flex;
+    gap:1.5rem;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 
 .footer-brand .brand-name {
