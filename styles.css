@@ -56,7 +56,7 @@ footer {
     border-radius: 24px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(252, 252, 255);
+    background-color: white;
 }
 
 #hero::after {
@@ -464,12 +464,10 @@ footer {
     grid-column: span 7;
     height: 440px;
    
-       
-
-       background-image: url('images/Dress.jpg');
+        background-image: url('images/Amorous.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: right(-5px);
 }
 
 .project-2 {
@@ -485,13 +483,10 @@ footer {
     grid-column: span 5;
     height: 400px;
  background: var(--accent-lime);
-
-  background-image: url('images/Amorous.png');
+   background-image: url('images/Dress.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right(-5px);
-
-
+    background-position: center; 
 }
 
 .project-4 {
@@ -561,7 +556,7 @@ footer {
     color: var(--bg-base);
     padding: 4rem var(--page-padding);
     border-radius: 24px;
-    width:97%;
+    width:100%;
 }
 
 .footer-container {
