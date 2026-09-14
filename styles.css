@@ -56,7 +56,7 @@ footer {
     border-radius: 24px;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: rgb(252, 252, 255);
 }
 
 #hero::after {
