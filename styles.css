@@ -464,10 +464,12 @@ footer {
     grid-column: span 7;
     height: 440px;
    
-        background-image: url('images/Amorous.png');
+       
+
+       background-image: url('images/Dress.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right(-5px);
+    background-position: center; 
 }
 
 .project-2 {
@@ -483,10 +485,13 @@ footer {
     grid-column: span 5;
     height: 400px;
  background: var(--accent-lime);
-   background-image: url('images/Dress.jpg');
+
+  background-image: url('images/Amorous.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: right(-5px);
+
+
 }
 
 .project-4 {
