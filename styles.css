@@ -505,6 +505,7 @@ footer {
       background-image: url('images/Heart.mp4');
     background-repeat: no-repeat;
     background-size: cover; 
+    background-position: center;
 }
 
 .project:hover {
