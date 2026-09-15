@@ -502,6 +502,9 @@ footer {
     grid-column: span 12;
     height: 360px;
     background: #FF8AD8;
+      background-image: url('images/Heart.mp4');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .project:hover {
@@ -556,12 +559,7 @@ footer {
     color: var(--bg-base);
     padding: 4rem var(--page-padding);
     border-radius: 24px;
-<<<<<<< Updated upstream
     width:100%;
-=======
-    width:auto;
-    margin:0;
->>>>>>> Stashed changes
 }
 
 .footer-container {
