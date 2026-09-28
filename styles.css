@@ -3,7 +3,7 @@
     --bg-dark: #1b1b1e;
     --text-primary: #2e2a34;
     --text-secondary: #494352;
-    --accent-pink: #f79eff;
+    --accent-pink: #e49eff;
     --accent-blue: #9ECBFF;
     --accent-lime: #F3F7C4;
     --border-color: rgba(84, 34, 59, 0.08);
@@ -515,11 +515,7 @@ footer {
 .project-7 {
     grid-column: span 6;
     height: 360px;
-    background: #FF8AD8;
-     background-image: url('images/Heart.gif');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center;
+    background: #f8fbff;
 }
 
 
@@ -1080,21 +1076,21 @@ footer {
 .chatbot-option-card:nth-child(4n-2),
 .chat-suggestion-btn:nth-child(4n-2),
 .chat-option-btn:nth-child(4n-2) {
-    background-color: var(--accent-blue);
+    background-color: #A9C9F5;
     color: var(--text-primary);
 }
 
 .chatbot-option-card:nth-child(4n-1),
 .chat-suggestion-btn:nth-child(4n-1),
 .chat-option-btn:nth-child(4n-1) {
-    background-color: #ff755a;
+    background-color:#F2A7B8;
      color: var(--text-primary);
 }
 
 .chatbot-option-card:nth-child(4n),
 .chat-suggestion-btn:nth-child(4n),
 .chat-option-btn:nth-child(4n) {
-    background-color: var(--accent-lime);
+    background-color:#DCE5C1;
     color: var(--text-primary);
 }
 
@@ -1362,7 +1358,160 @@ body.loaded .app-launch-overlay {
     }
 }
 
+@media (max-width: 1024px) {
+    #hero {
+        min-height: 70vh;
+        padding-bottom: 3rem;
+    }
+
+    .carousel-track {
+        min-height: 380px;
+    }
+
+    .carousel-slide {
+        position: relative;
+        inset: auto;
+        display: none;
+        width: 100%;
+    }
+
+    .carousel-slide.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-bottom-controls {
+        margin-top: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .hero-title {
+        text-align: center;
+        font-size: clamp(2.4rem, 11vw, 5.5rem);
+        line-height: 1.1;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .modal-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .modal-right {
+        flex-direction: row;
+    }
+
+    .projects-wrapper {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 0;
+        margin-bottom: var(--page-padding);
+        margin-left: auto;
+        margin-right: auto;
+        background-image: none;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        border-radius: 18px;
+        padding: 0 0 2rem 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #hero {
+        min-height: 65vh;
+    }
+
+    .carousel-track {
+        min-height: 340px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 2rem var(--page-padding);
+        display: none;
+    }
+
+    .about-content {
+        display: none;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-content p {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .modal-container {
+        width: 98vw;
+        padding: 1.25rem;
+    }
+
+    .modal-right {
+        flex-direction: column;
+    }
+
+    .modal-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .modal-container .placeholder-block,
+    .modal-container .hero-img,
+    .modal-container .sidebar-bottom-img,
+    .modal-container .extra-main-img,
+    .modal-container .extra-main-img-secondary,
+    .modal-container .color-palette-img {
+        height: 220px !important;
+        min-height: 220px !important;
+        max-height: 220px !important;
+    }
+
+    .main-bottom-images.two-col {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 20px;
+    }
+
+    .main-bottom-images.two-col .placeholder-block {
+        height: 220px !important;
+        min-height: 220px !important;
+        max-height: 220px !important;
+    }
+
+    .projects-wrapper {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 0;
+        margin-bottom: var(--page-padding);
+        margin-left: auto;
+        margin-right: auto;
+        background-image: none;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        border-radius: 18px;
+        padding: 0 0 2rem 0;
+    }
+}
+
+
 @media (max-width: 600px) {
+
+    /* =========================
+       CHATBOT
+       ========================= */
+
     .chatbot-window {
         position: fixed;
         inset: auto 0.4rem 0.4rem 0.4rem;
@@ -1418,8 +1567,10 @@ body.loaded .app-launch-overlay {
         border-radius: 14px;
     }
 
+    /* CHANGED FROM 0.88rem TO 16px
+       Prevents Safari/iPhone input zoom */
     #chatbot-input {
-        font-size: 0.88rem;
+        font-size: 16px;
     }
 
     #chatbot-form button {
@@ -1427,6 +1578,11 @@ body.loaded .app-launch-overlay {
         font-size: 0.75rem;
         border-radius: 10px;
     }
+
+
+    /* =========================
+       HERO
+       ========================= */
 
     #hero {
         min-height: 72vh;
@@ -1537,7 +1693,7 @@ body.loaded .app-launch-overlay {
         text-align: center;
         gap: 0.8rem;
         width: 100%;
-        margin: 0 auto; 
+        margin: 0 auto;
     }
 
     .hero-title {
@@ -1549,11 +1705,11 @@ body.loaded .app-launch-overlay {
     }
 
     .hero-flower {
-        position: relative; 
+        position: relative;
         inset: auto;
         left: auto;
-        top: auto; 
-        transform: none; 
+        top: auto;
+        transform: none;
         margin: 0 auto 0.6rem;
         display: block;
         text-align: center;
@@ -1596,6 +1752,11 @@ body.loaded .app-launch-overlay {
         width: 22px;
     }
 
+
+    /* =========================
+       PROJECTS
+       ========================= */
+
     .projects {
         display: flex;
         flex-direction: column;
@@ -1620,11 +1781,18 @@ body.loaded .app-launch-overlay {
 
     .deco-icon,
     .comment-pill {
-        display: none; 
+        display: none;
     }
 
-    .footer-container{
-        display:flex;
+
+    /* =========================
+       FOOTER
+       ========================= */
+
+    .footer-container {
+        display: flex;
         flex-direction: column;
     }
 }
+
+    
