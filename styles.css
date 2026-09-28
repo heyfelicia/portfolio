@@ -50,7 +50,7 @@ footer {
 
 #hero {
     position: relative;
-    min-height: 80vh;
+    min-height: 95vh;
     margin-top: 0;
     overflow: hidden;
     border-radius: 24px;
@@ -74,7 +74,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5rem var(--page-padding) 1rem;
+    padding: 1.5rem var(--page-padding) 0.6rem;
     z-index: 100;
 }
 
@@ -107,6 +107,15 @@ footer {
 
 .nav-link:hover {
     color:#e49eff;
+}
+
+.nav-link.unavailable {
+    text-decoration: line-through;
+    text-decoration-thickness: 1px;
+    text-decoration-style: solid;
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;
 }
 
 .menu-toggle {
@@ -177,6 +186,7 @@ footer {
     width: 100%;
     display: flex;
     align-items: center;
+    
 }
 
 .carousel-slide {
@@ -190,6 +200,8 @@ footer {
     align-items: center;
     z-index: 1;
 }
+
+
 
 .carousel-slide.active {
     opacity: 1;
@@ -228,7 +240,7 @@ footer {
     margin: 0;
     color: var(--font-sans);
     font-family: var(--font-heading);
-    font-size: clamp(3.5rem, 6vw, 5.25rem);
+    font-size: clamp(3rem, 5vw, 4.5rem);
     font-weight: 400;
     line-height: 1.02;
     letter-spacing: -0.03em;
@@ -1244,13 +1256,15 @@ body.loaded .app-launch-overlay {
         padding-bottom: 0.5rem;
     }
 
+  
     .hero-title {
         text-align: center;
-        font-size: clamp(2.4rem, 11vw, 5.5rem);
+        font-size: clamp(1.3rem, 7vw, 3rem);
         line-height: 1.1;
         width: 100%;
         max-width: 100%;
     }
+
     
     .modal-grid { 
         grid-template-columns: 1fr; 
@@ -1392,7 +1406,7 @@ body.loaded .app-launch-overlay {
 
     .hero-title {
         text-align: center;
-        font-size: clamp(2.4rem, 11vw, 5.5rem);
+        font-size: clamp(1.4rem, 10vw, 4rem);
         line-height: 1.1;
         width: 100%;
         max-width: 100%;
@@ -1512,9 +1526,7 @@ body.loaded .app-launch-overlay {
 
 @media (max-width: 600px) {
 
-    /* =========================
-       CHATBOT
-       ========================= */
+
 
     .chatbot-window {
         position: fixed;
@@ -1571,8 +1583,7 @@ body.loaded .app-launch-overlay {
         border-radius: 14px;
     }
 
-    /* CHANGED FROM 0.88rem TO 16px
-       Prevents Safari/iPhone input zoom */
+   
     #chatbot-input {
         font-size: 16px;
     }
@@ -1584,9 +1595,7 @@ body.loaded .app-launch-overlay {
     }
 
 
-    /* =========================
-       HERO
-       ========================= */
+
 
     #hero {
         min-height: 72vh;
@@ -1702,7 +1711,7 @@ body.loaded .app-launch-overlay {
 
     .hero-title {
         text-align: center;
-        font-size: clamp(2.6rem, 11.5vw, 5.2rem);
+        font-size: clamp(1.6rem, 9.5vw, 4rem);
         line-height: 1.1;
         width: 100%;
         max-width: 100%;
