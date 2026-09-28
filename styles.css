@@ -79,7 +79,7 @@ footer {
 }
 
 .logo {
-    font-family: var(--font-sans);
+    font-family:var(--font-sans);
     font-weight: 700;
     font-size: 0.95rem;
     letter-spacing: 0.08em;
@@ -226,7 +226,7 @@ footer {
 
 .hero-title {
     margin: 0;
-    color: var(--text-primary);
+    color: var(--font-sans);
     font-family: var(--font-heading);
     font-size: clamp(3.5rem, 6vw, 5.25rem);
     font-weight: 400;
