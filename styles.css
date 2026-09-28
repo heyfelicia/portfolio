@@ -106,7 +106,7 @@ footer {
 }
 
 .nav-link:hover {
-    color: #FF8AD8;
+    color:#e49eff;
 }
 
 .menu-toggle {
@@ -162,7 +162,7 @@ footer {
 }
 
 .mobile-nav-link:hover {
-    color: #FF8AD8;
+    color:#e49eff;
     font-style: italic;
 }
 
@@ -516,6 +516,10 @@ footer {
     grid-column: span 6;
     height: 360px;
     background: #f8fbff;
+        background-image: url('images/');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position:20% 40%;
 }
 
 
@@ -697,7 +701,7 @@ footer {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background-color: #FF8AD8;
+    background-color: #e49eff;
     color: var(--bg-base);
     border: none;
     font-size: 1.2rem;
@@ -742,7 +746,7 @@ footer {
 }
 
 .project-category { 
-    color: #FF8AD8; 
+    color: #e49eff; 
     font-weight: 700; 
     font-size: 0.8rem;
     letter-spacing: 0.1em; 
@@ -793,7 +797,7 @@ footer {
 }
 
 .accent-bg-#FF8AD8 {
-    background-color: #FF8AD8;
+    background-color:#e49eff;
 }
 
 .sidebar-bottom-img {
@@ -850,7 +854,7 @@ footer {
 }
 
 .design-notes-header {
-    border-bottom: 2px dashed rgba(84, 34, 59, 0.15);
+    border-bottom: 1.7px dashed rgba(84, 34, 59, 0.15);
     padding-bottom: 0.5rem;
 }
 
@@ -870,7 +874,7 @@ footer {
     font-family: var(--font-mono);
     font-size: 0.75rem;
     font-weight: 700;
-    color: #FF8AD8;
+    color:#e49eff;
     letter-spacing: 0.05em;
 }
 
