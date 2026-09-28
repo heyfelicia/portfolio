@@ -464,7 +464,7 @@ footer {
     grid-column: span 7;
     height: 440px;
    
-        background-image: url('images/Amorous.png');
+        background-image: url('images/Aster.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right(-5px);
@@ -474,10 +474,13 @@ footer {
     grid-column: span 5;
     height: 440px;
     background: var(--accent-blue);
-    background-image: url('images/Choices.png');
+    background-image: url('images/Butterfly.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center; 
 }
+
+
 
 .project-3 {
     grid-column: span 5;
@@ -498,21 +501,11 @@ footer {
     background-position: center; 
 }
 
-.project-5 {
-    grid-column: span 12;
-    height: 360px;
-    background: #FF8AD8;
-      background-image: url('images/Heart.gif');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center;
-}
-
 .project-6 {
     grid-column: span 6;
     height: 360px;
     background: #FF8AD8;
-      background-image: url('images/Duck.gif');
+      background-image: url('images/Amorous.png');
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
@@ -523,7 +516,7 @@ footer {
     grid-column: span 6;
     height: 360px;
     background: #FF8AD8;
-      background-image: url('images/Arrow.gif');
+     background-image: url('images/Heart.gif');
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
