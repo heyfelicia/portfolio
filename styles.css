@@ -464,7 +464,7 @@ footer {
     grid-column: span 5;
     height: 400px;
  background: var(--accent-lime);
-   background-image: url('images/Dress.jpg');
+   background-image: url('images/Dress.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
