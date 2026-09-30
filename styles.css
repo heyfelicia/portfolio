@@ -213,12 +213,12 @@ footer {
 
 .profile {
      background: #e7a9ff;
-       background-image: url('images/Me.png');
+       background-image: url('images/#');
     background-repeat: no-repeat;
     background-size: 150%;
     background-position: center;
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     margin-bottom: 2rem;
 }
