@@ -109,7 +109,7 @@ const projects = {
 
 
     notebook: {
-        title: "Little Web Lab",
+        title: "Web Lab",
         category: "WEB DEVELOPMENT + EDUCATION",
         description: "A playful browser-based coding environment designed to make beginner HTML and CSS workshops more approachable.",
         role: "Designer + Developer",
