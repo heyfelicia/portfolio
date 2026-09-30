@@ -190,7 +190,7 @@ const projects = {
         deliverables: "Character Design, Illustration, Motion",
         projectCategory: "Illustration",
 
-        hero: "images/Menace.mp4",
+        hero: "images/Cat.png",
 
         gallery: [],
 
