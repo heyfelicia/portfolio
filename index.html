@@ -5,322 +5,651 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of Felicia Phillips">
+
     <title>Felicia Phillips</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap"
+        rel="stylesheet"
+    >
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
 
-    <link rel="stylesheet" href="https://use.typekit.net/wfd1msr.css">
+    <link
+        rel="stylesheet"
+        href="https://use.typekit.net/wfd1msr.css"
+    >
+
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
+    <section id="hero">
 
-    <!--
-    <div class="app-launch-overlay">
-        <div class="launch-icons-container">
-            <img src="images/icon_Blue Flower.svg" alt="Cherry icon" class="launch-icon">
-            <img src="images/icon_Pink Flower.svg" alt="Heart icon" class="launch-icon" style="margin:10px";>
-            <img src="images/icon_Sparkle.svg" alt="Star icon" class="launch-icon" style="width:40px ; height:auto;">
-            <img src="images/icon-01.svg" alt="Flower icon" class="launch-icon">
-        </div>
-    </div>-->
-
-
-    <section id="hero"> 
         <header class="hero-nav">
-            <a href="#" class="logo">Felicia Phillips</a>
-           <nav class="nav-links">
-    <a href="#" class="nav-link">Work</a>
-    <a href="#" class="nav-link unavailable">Commissions</a>
-    <a href="#" class="nav-link unavailable">Contact</a>
-</nav>
-            
 
-            <button class="menu-toggle" aria-label="Toggle navigation menu">
+            <a href="#" class="logo">
+                Felicia Phillips
+            </a>
+
+            <nav class="nav-links">
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#" class="nav-link unavailable">Commissions</a>
+                <a href="#" class="nav-link unavailable">Contact</a>
+            </nav>
+
+            <button
+                class="menu-toggle"
+                aria-label="Toggle navigation menu"
+            >
                 <span></span>
                 <span></span>
             </button>
 
             <div class="mobile-menu-overlay">
+
                 <nav class="mobile-nav-links">
-                    <a href="#" class="mobile-nav-link">Work <span>  <svg width="22" height="22" viewBox="0 0 24 24" fill="#3a2e2b">
-                    <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" />
-                </svg></span></a>
-                    <a href="#" class="mobile-nav-link nav-link unavailable">Commissions <span>  <svg width="22" height="22" viewBox="0 0 24 24" fill="#3a2e2b">
-                    <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" />
-                </svg></span></a>
-                    <a href="#" class="mobile-nav-link nav-link unavailable">Contact <span>  <svg width="22" height="22" viewBox="0 0 24 24" fill="#3a2e2b">
-                    <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" />
-                </svg></span></a>
+
+                    <a href="#work" class="mobile-nav-link">
+
+                        Work
+
+                        <span>
+                            <svg
+                                width="22"
+                                height="22"
+                                viewBox="0 0 24 24"
+                                fill="#3a2e2b"
+                            >
+                                <path
+                                    d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"
+                                />
+                            </svg>
+                        </span>
+
+                    </a>
+
+                    <a
+                        href="#"
+                        class="mobile-nav-link nav-link unavailable"
+                    >
+
+                        Commissions
+
+                        <span>
+                            <svg
+                                width="22"
+                                height="22"
+                                viewBox="0 0 24 24"
+                                fill="#3a2e2b"
+                            >
+                                <path
+                                    d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"
+                                />
+                            </svg>
+                        </span>
+
+                    </a>
+
+                    <a
+                        href="#"
+                        class="mobile-nav-link nav-link unavailable"
+                    >
+
+                        Contact
+
+                        <span>
+                            <svg
+                                width="22"
+                                height="22"
+                                viewBox="0 0 24 24"
+                                fill="#3a2e2b"
+                            >
+                                <path
+                                    d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"
+                                />
+                            </svg>
+                        </span>
+
+                    </a>
+
                 </nav>
+
             </div>
+
         </header>
 
         <div class="carousel-track">
-            <!-- Slide 1 -->
+
             <div class="carousel-slide active">
+
                 <div class="hero-content">
+
                     <div class="hero-left">
+
+                        <div class="profile"></div>
+
                         <div class="hero-title-wrap">
-                          
-                            <h1 class="hero-title">Hello! I'm Felicia.<br> I Design,
-                <em>Illustrate</em> <br>& Code.</h1>
+
+                            <h1 class="hero-title">
+                                Hello! I'm Felicia.
+                                <br>
+                                I Design,
+                                <em>Illustrate</em>
+                                <br>
+                                & Code.
+                            </h1>
+
                         </div>
+
                     </div>
+
                 </div>
+
             </div>
 
-            <!-- Slide 2: Workshop Carousel Tab
-            <div class="carousel-slide">
-                <div class="hero-content-workshop">
-                    <div class="hero-title-wrap">
-                       
-                         <h1 class="hero-title">Web Dev <br> <em>Workshop</em></h1>
-                    </div>
-                    <div class="hero-info">
-                       <p class="workshop-info">
-                        Forget boring websites. Learn to code by creating something cute, creative, and completely your own.
-                       </p>
-                        <a href="#" class="hero-button">Sign Up <span>→</span></a>     
-                    </div>
-                </div>
-            </div>  -->
         </div>
 
         <div class="hero-bottom-controls">
+
             <div class="carousel-controls">
-                <button class="carousel-arrow prev" aria-label="Previous slide">←</button>
+
+                <button
+                    class="carousel-arrow prev"
+                    aria-label="Previous slide"
+                >
+                    ←
+                </button>
+
                 <div class="carousel-dots">
-                    <button class="dot active" data-index="0"></button>
-                    <button class="dot" data-index="1"></button>
+
+                    <button
+                        class="dot active"
+                        data-index="0"
+                        aria-label="Slide 1"
+                    ></button>
+
+                    <button
+                        class="dot"
+                        data-index="1"
+                        aria-label="Slide 2"
+                    ></button>
+
                 </div>
-                <button class="carousel-arrow next" aria-label="Next slide">→</button>
+
+                <button
+                    class="carousel-arrow next"
+                    aria-label="Next slide"
+                >
+                    →
+                </button>
+
             </div>
+
         </div>
-</section>  
 
-    <!-- Projects Wrapper -->
-    <section class="projects-wrapper">
+    </section>
 
-        <!-- Decorative Icons 
-        <img src="images/icon_Orange Flower.svg" alt="Cherry" class="deco-icon deco-cherry">
-        <img src="images/Star.svg" alt="Star" class="deco-icon deco-star">
-         <img src="images/Star.svg" alt="Star" class="deco-icon deco-star2">
-       <img src="images/white-flower.svg" alt="Star" class="deco-icon flower"> --> 
-       
-        <div class="comment-pill pill-1">✨ click to explore</div>
-        <div class="comment-pill pill-2"> portfolio work</div>
+    <section class="projects-wrapper" id="work">
+
+        <div class="comment-pill pill-1">
+            ✨ click to explore
+        </div>
+
+        <div class="comment-pill pill-2">
+            portfolio work
+        </div>
 
         <div class="projects">
-            <div class="project project-1"></div>
-            <div class="project project-2"></div>
-            <div class="project project-3"></div>
-            <div class="project project-4"></div>
-             <div class="project project-6"></div>
-              <div class="project project-7"></div>
-          
+
+            <div
+                class="project project-1"
+                data-project="aster"
+                role="button"
+                tabindex="0"
+                aria-label="View Aster project"
+            ></div>
+
+            <div
+                class="project project-2"
+                data-project="butterfly"
+                role="button"
+                tabindex="0"
+                aria-label="View Butterfly project"
+            ></div>
+
+            <div
+                class="project project-3"
+                data-project="reverie"
+                role="button"
+                tabindex="0"
+                aria-label="View Reverie project"
+            ></div>
+
+            <div
+                class="project project-4"
+                data-project="notebook"
+                role="button"
+                tabindex="0"
+                aria-label="View Little Web Lab project"
+            ></div>
+
+            <div
+                class="project project-6"
+                data-project="amorous"
+                role="button"
+                tabindex="0"
+                aria-label="View Amorous project"
+            ></div>
+
+            <div
+                class="project project-7"
+                data-project="menace"
+                role="button"
+                tabindex="0"
+                aria-label="View Menace project"
+            ></div>
+
         </div>
+
     </section>
 
     <footer>
+
         <div class="footer-container">
+
             <div class="footer-brand">
-                <a href="#" class="brand-name">Felicia Phillips</a>
+
+                <a href="#" class="brand-name">
+                    Felicia Phillips
+                </a>
+
             </div>
+
             <nav class="footer-nav">
-                <a href="https://www.youtube.com/@heyxfelicia" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+
+                <a
+                    href="https://www.youtube.com/@heyxfelicia"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="YouTube"
+                >
                     <i class="fa-brands fa-youtube"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/feliciamphillips/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+
+                <a
+                    href="https://www.linkedin.com/in/feliciamphillips/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                >
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
-                <a href="https://www.instagram.com/__heyfelicia/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+
+                <a
+                    href="https://www.instagram.com/__heyfelicia/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                >
                     <i class="fa-brands fa-instagram"></i>
                 </a>
 
-                <a href="https://www.tiktok.com/@__heyfelicia" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                <a
+                    href="https://www.tiktok.com/@__heyfelicia"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="TikTok"
+                >
                     <i class="fa-brands fa-tiktok"></i>
                 </a>
+
             </nav>
+
         </div>
+
     </footer>
 
-    <!-- Interactive Chatbot Widget -->
-    <div id="chatbot-container" class="chatbot-window">
+    <div
+        id="chatbot-container"
+        class="chatbot-window"
+    >
+
         <div class="chatbot-header">
+
             <div class="chatbot-title-area">
                 <span class="chatbot-status-dot"></span>
                 <h3>Chat with Felicia's Assistant</h3>
             </div>
-            <button class="chatbot-close" aria-label="Close chat">&times;</button>
+
+            <button
+                class="chatbot-close"
+                aria-label="Close chat"
+            >
+                ×
+            </button>
+
         </div>
-        <div class="chatbot-body" id="chatbot-messages">
-             <div class="chat-message bot-message">
-                Hi there! <img src="images/Star.svg" style="width:14px; height:auto;"> What are you looking to collaborate on today? Click an option below or type your request:
+
+        <div
+            class="chatbot-body"
+            id="chatbot-messages"
+        >
+
+            <div class="chat-message bot-message">
+
+                Hi there!
+
+                <img
+                    src="images/Star.svg"
+                    alt=""
+                    style="width:14px; height:auto;"
+                >
+
+                What are you looking to collaborate on today?
+                Click an option below or type your request:
+
             </div>
-            <div class="chat-options" id="chat-options-container">
-                <button class="chat-option-btn" data-topic="Web Design"> Web Design</button>
-                <button class="chat-option-btn" data-topic="Design Workshop">Design Workshop</button>
-                <button class="chat-option-btn" data-topic="Illustration">Illustration</button>
-                <button class="chat-option-btn" data-topic="General Inquiry"> General Inquiry</button>
+
+            <div
+                class="chat-options"
+                id="chat-options-container"
+            >
+
+                <button
+                    class="chat-option-btn"
+                    data-topic="Web Design"
+                >
+                    Web Design
+                </button>
+
+                <button
+                    class="chat-option-btn"
+                    data-topic="Design Workshop"
+                >
+                    Design Workshop
+                </button>
+
+                <button
+                    class="chat-option-btn"
+                    data-topic="Illustration"
+                >
+                    Illustration
+                </button>
+
+                <button
+                    class="chat-option-btn"
+                    data-topic="General Inquiry"
+                >
+                    General Inquiry
+                </button>
+
             </div>
+
         </div>
+
         <div class="chatbot-footer">
+
             <form id="chatbot-form">
-                <input type="text" id="chatbot-input" placeholder="Type your message..." autocomplete="off">
-                <button type="submit">Send</button>
+
+                <input
+                    type="text"
+                    id="chatbot-input"
+                    placeholder="Type your message..."
+                    autocomplete="off"
+                >
+
+                <button type="submit">
+                    Send
+                </button>
+
             </form>
+
         </div>
+
     </div>
 
-    <!-- Floating Chatbot Toggle Button -->
-    <button class="chatbot" id="chatbot-toggle" aria-label="Open assistant">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="#3a2e2b">
-            <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" />
+    <button
+        class="chatbot"
+        id="chatbot-toggle"
+        aria-label="Open assistant"
+    >
+
+        <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="#3a2e2b"
+        >
+            <path
+                d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"
+            />
         </svg>
+
     </button>
 
-    <!-- Project Modal (Unified Masonry Grid Template) -->
-    <div id="project-modal" class="modal-backdrop">
-        <div class="modal-container">
-            <button class="modal-close" aria-label="Close modal">&times;</button>
-            
+    <div
+        id="project-modal"
+        class="modal-backdrop"
+        aria-hidden="true"
+    >
+
+        <div
+            class="modal-container"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-project-title"
+        >
+
+            <button
+                class="modal-close"
+                aria-label="Close project"
+            >
+                ×
+            </button>
+
             <div class="modal-grid">
-                <!-- Left Sidebar: Title & Metadata -->
-                <div class="modal-sidebar">
+
+                <aside class="modal-sidebar">
+
                     <div class="project-header">
-                        <h2 class="project-title">Project Title 
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="project-flower-icon">
-                                <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="#e49eff" stroke="none"/>
+
+                        <h2
+                            class="project-title"
+                            id="modal-project-title"
+                        >
+
+                            Project Title
+
+                            <svg
+                                width="32"
+                                height="32"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                class="project-flower-icon"
+                            >
+                                <path
+                                    d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"
+                                    fill="#e49eff"
+                                    stroke="none"
+                                />
                             </svg>
+
                         </h2>
-                        <p class="project-category">PROJECT CATEGORY</p>
+
+                        <p class="project-category">
+                            PROJECT CATEGORY
+                        </p>
+
                     </div>
 
-                    <p class="project-desc">Placeholder text describing the core concept, goals, and vision of the project.</p>
-                    
+                    <p class="project-desc">
+                        Project description will appear here.
+                    </p>
+
                     <div class="project-meta">
+
                         <div class="meta-item">
                             <strong>ROLE</strong>
-                            <span>Placeholder Role</span>
+                            <span data-meta="role">—</span>
                         </div>
+
                         <div class="meta-item">
                             <strong>TOOLS</strong>
-                            <span>Tools Used</span>
+                            <span data-meta="tools">—</span>
                         </div>
+
                         <div class="meta-item">
                             <strong>YEAR</strong>
-                            <span>202X</span>
+                            <span data-meta="year">—</span>
                         </div>
+
                         <div class="meta-item">
                             <strong>DELIVERABLES</strong>
-                            <span>Design Assets, Concept, Code</span>
+                            <span data-meta="deliverables">—</span>
                         </div>
+
                         <div class="meta-item">
                             <strong>CATEGORY</strong>
-                            <span>General Category</span>
+                            <span data-meta="category">—</span>
                         </div>
-                    </div>
-                </div>
 
-                <!-- Center Main Content Area -->
-                <div class="modal-main">
-                    <div class="placeholder-block hero-img main-bg"></div>
-                    
-                    <div class="main-bottom-images two-col">
-                        <div class="placeholder-block main-bg"></div>
-                        <div class="placeholder-block main-bg"></div>
                     </div>
 
-                    <div class="placeholder-block extra-main-img main-bg"></div>
-                    <div class="placeholder-block extra-main-img-secondary main-bg"></div>
-                </div>
+                </aside>
 
-                <!-- Right Column: Design Notes, Strategy & Carousel Tracks -->
-                <div class="modal-right process-notes-column">
+                <main class="modal-main">
+
+                    <div class="project-hero-container"></div>
+
+                    <div class="project-gallery"></div>
+
+                </main>
+
+                <aside class="modal-right process-notes-column">
+
                     <div class="design-notes-header">
-                        <span class="notes-title">Process & Strategy</span>
+                        <span class="notes-title">
+                            Process & Strategy
+                        </span>
                     </div>
 
-                    <!-- The Challenge -->
                     <div class="process-card challenge-card">
-                        <span class="process-step">THE CHALLENGE</span>
-                        <p class="process-text">Placeholder text outlining the core obstacle or design problem addressed in this project.</p>
+
+                        <span class="process-step">
+                            THE CHALLENGE
+                        </span>
+
+                        <p class="process-text">
+                            Project challenge will appear here.
+                        </p>
+
                     </div>
 
-                    <!-- Mood & Vibe Carousel Track -->
-                    <div class="process-card">
-                        <span class="process-step">MOOD & VIBE</span>
-                        <div class="process-scroll-track" onclick="nextModalSlide(this)">
-                            <div class="process-image-wrap active">
-                                <img src="images/placeholder-moodboard-1.png" alt="Mood board 1" class="process-sketch-img">
-                            </div>
-                            <div class="process-image-wrap">
-                                <img src="images/placeholder-moodboard-2.png" alt="Mood board 2" class="process-sketch-img">
-                            </div>
-                            <div class="process-image-wrap">
-                                <img src="images/placeholder-moodboard-3.png" alt="Mood board 3" class="process-sketch-img">
-                            </div>
-                        </div>
+                    <div
+                        class="process-card"
+                        data-process="mood"
+                    >
+
+                        <span class="process-step">
+                            MOOD & VIBE
+                        </span>
+
+                        <div
+                            class="process-scroll-track"
+                            data-process-images="mood"
+                        ></div>
+
                     </div>
 
-                    <!-- Step 01: The Idea Carousel Track -->
-                    <div class="process-card">
-                        <span class="process-step">01 &nbsp; THE IDEA</span>
-                        <p class="process-text">Concept spark and layout direction.</p>
-                        <div class="process-scroll-track" onclick="nextModalSlide(this)">
-                            <div class="process-image-wrap active">
-                                <img src="images/placeholder-sketch-1.png" alt="Idea sketch 1" class="process-sketch-img">
-                            </div>
-                            <div class="process-image-wrap">
-                                <img src="images/placeholder-sketch-1-alt.png" alt="Idea sketch 2" class="process-sketch-img">
-                            </div>
-                        </div>
+                    <div
+                        class="process-card"
+                        data-process="idea"
+                    >
+
+                        <span class="process-step">
+                            01 &nbsp; THE IDEA
+                        </span>
+
+                        <p
+                            class="process-text"
+                            data-process-text="idea"
+                        >
+                            Concept and initial direction.
+                        </p>
+
+                        <div
+                            class="process-scroll-track"
+                            data-process-images="idea"
+                        ></div>
+
                     </div>
 
-                    <!-- Step 02: Early Exploration Carousel Track -->
-                    <div class="process-card">
-                        <span class="process-step">02 &nbsp; EARLY EXPLORATION</span>
-                        <p class="process-text">Wireframing iterations and structure.</p>
-                        <div class="process-scroll-track" onclick="nextModalSlide(this)">
-                            <div class="process-image-wrap active">
-                                <img src="images/placeholder-sketch-2.png" alt="Wireframe 1" class="process-sketch-img">
-                            </div>
-                            <div class="process-image-wrap">
-                                <img src="images/placeholder-sketch-2-alt.png" alt="Wireframe 2" class="process-sketch-img">
-                            </div>
-                            <div class="process-image-wrap">
-                                <img src="images/placeholder-sketch-2-alt2.png" alt="Wireframe 3" class="process-sketch-img">
-                            </div>
-                        </div>
+                    <div
+                        class="process-card"
+                        data-process="exploration"
+                    >
+
+                        <span class="process-step">
+                            02 &nbsp; EARLY EXPLORATION
+                        </span>
+
+                        <p
+                            class="process-text"
+                            data-process-text="exploration"
+                        >
+                            Early design exploration.
+                        </p>
+
+                        <div
+                            class="process-scroll-track"
+                            data-process-images="exploration"
+                        ></div>
+
                     </div>
 
-                    <!-- Step 03: Why This Direction? Carousel Track -->
-                    <div class="process-card">
-                        <span class="process-step">03 &nbsp; WHY THIS DIRECTION?</span>
-                        <p class="process-text">Final visual balance reflections.</p>
-                        <div class="process-scroll-track" onclick="nextModalSlide(this)">
-                            <div class="process-image-wrap active">
-                                <img src="images/placeholder-sketch-3.png" alt="Final layout 1" class="process-sketch-img">
-                            </div>
-                            <div class="process-image-wrap">
-                                <img src="images/placeholder-sketch-3-alt.png" alt="Final layout 2" class="process-sketch-img">
-                            </div>
-                        </div>
+                    <div
+                        class="process-card"
+                        data-process="direction"
+                    >
+
+                        <span class="process-step">
+                            03 &nbsp; WHY THIS DIRECTION?
+                        </span>
+
+                        <p
+                            class="process-text"
+                            data-process-text="direction"
+                        >
+                            Final design direction.
+                        </p>
+
+                        <div
+                            class="process-scroll-track"
+                            data-process-images="direction"
+                        ></div>
+
                     </div>
-                </div>
+
+                </aside>
+
             </div>
 
         </div>
+
     </div>
 
-    <!-- JavaScript -->
     <script src="scripts.js"></script>
+
 </body>
+
 </html>
