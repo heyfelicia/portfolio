@@ -417,53 +417,6 @@ footer {
     background-color: #ffffff;
 }
 
-.deco-icon {
-    position: absolute;
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
-    z-index: 50;
-    pointer-events: none;
-    user-select: none;
-    animation: floatDeco 4s ease-in-out infinite;
-}
-
-.deco-cherry {
-    top: 8rem;
-    left: 28%;
-    transform: rotate(-15deg);
-}
-
-.deco-star {
-    top: 10em;
-    right: 50%;
-    transform: rotate(12deg);
-    animation-delay: 2s;
-}
-
-.deco-star2 {
-    bottom: 10rem;
-    right: 10%;
-    transform: rotate(12deg);
-    animation-delay: 2s;
-}
-
-.flower {
-    top: 25em;
-    right: 85%;
-    transform: rotate(30deg);
-    width: 120px;
-    height: 120px;
-}
-
-@keyframes floatDeco {
-    0%, 100% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-15px) rotate(5deg); }
-}
-
-.comment-pill {
-    display: none; 
-}
 
 .projects {
     position: relative;
@@ -487,9 +440,9 @@ footer {
 
 .project-1 {
     grid-column: span 7;
-    height: 440px;
+    height: 500px;
    
-        background-image: url('images/Aster.png');
+     background-image: url('images/Aster.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right(-5px);
@@ -497,7 +450,7 @@ footer {
 
 .project-2 {
     grid-column: span 5;
-    height: 440px;
+    height: 500px;
     background: var(--accent-blue);
     background-image: url('images/Butterfly.png');
     background-repeat: no-repeat;
