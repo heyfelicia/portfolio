@@ -120,7 +120,7 @@ const projects = {
 
         hero: "images/Notebook.gif",
 
-        gallery: ["images/Notebook.png"],
+        gallery: [],
 
         challenge: "Make learning code feel approachable without requiring students to download development software.",
 
