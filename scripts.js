@@ -84,7 +84,7 @@ const projects = {
 
         hero: "images/Dress.png",
 
-        gallery: ["images/Website.png"],
+        gallery: ["images/Website.png", "images/Character.png"],
 
         challenge: "Create a dress-up experience that gives users creative freedom without overwhelming the interface.",
 
