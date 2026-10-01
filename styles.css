@@ -1,6 +1,6 @@
 :root {
     --bg-base: #FFFFFF;
-    --bg-dark: #1b1b1e;
+    --bg-dark: #2d2e4b;
     --text-primary: #2d2e4b;
     --text-secondary: #494352;
     --accent-pink: #c0b0ff;
@@ -8,8 +8,8 @@
     --accent-lime: #F3F7C4;
     --border-color: rgba(84, 34, 59, 0.08);
     --accent-brown: rgba(84, 34, 59, 0.04);
-    --accent-brown-hover: rgba(84, 34, 59, 0.08);
-    --accent-brown-text: rgba(84, 34, 59, 0.4);
+    --accent-brown-hover: #2d2e4b;
+    --accent-brown-text: #2d2e4b;
     --font-heading:"fiona", sans-serif;
     --font-sans: "filson-pro", sans-serif;
     --font-mono: "Neulis Sans", "Neulis Monospaced", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
