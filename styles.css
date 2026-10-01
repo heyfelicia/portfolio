@@ -67,6 +67,7 @@ footer {
     align-items: center;
     padding: 1.5rem var(--page-padding) 0.6rem;
     z-index: 100;
+    margin: 25px 25px 25px 25px;
 }
 
 .logo {
