@@ -192,7 +192,7 @@ const projects = {
 
         hero: "images/Cat.png",
 
-        gallery: [],
+        gallery: ["images/2.png", "images/1.png"],
 
         challenge: "Create a character who feels simultaneously threatening, ridiculous, and cute.",
 
