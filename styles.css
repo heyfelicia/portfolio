@@ -984,7 +984,7 @@ footer {
 
 .user-message {
     background: var(--accent-pink);
-    color: white;
+    color: Black;
     align-self: flex-end;
     border-top-right-radius: 6px;
 }
