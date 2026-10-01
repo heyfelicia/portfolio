@@ -1,8 +1,8 @@
 :root {
     --bg-base: #FFFFFF;
-    --bg-dark: #18191e;
-    --text-primary: #2d2e4b;
-    --text-secondary: #494352;
+    --bg-dark: #252548;
+    --text-primary: #282854;
+    --text-secondary: #38386e;
     --accent-pink: #c0b0ff;
     --accent-blue: #9ECBFF;
     --accent-lime: #F3F7C4;
@@ -976,7 +976,7 @@ footer {
 }
 
 .bot-message {
-    background:#494352;
+    background:#424285;
     color: var(--bg-base);
     align-self: flex-start;
     border-top-left-radius: 6px;
