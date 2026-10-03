@@ -567,9 +567,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(31, 16, 24, 0.45);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+    background: rgba(54, 51, 83, 0.45);
     z-index: 1000;
     opacity: 0;
     pointer-events: none;
