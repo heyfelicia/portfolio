@@ -259,12 +259,15 @@ footer {
     text-align: center;
     width: 100%;
     text-transform: uppercase;
+    text-transform: none !important;
+    font-family: var(--font-sans)
 }
 
 h1, h2, h3, h4, h5, h6, .notes-title {
     font-family: var(--font-heading);
     text-transform: uppercase;
 }
+
 
 .hero-subtitle {
     font-family: var(--font-sans);
@@ -1113,12 +1116,13 @@ font-size: 1.25rem;
         margin-top: 1.5rem;
         padding-bottom: 0.5rem;
     }
-    .hero-title {
+    .hero-title h1 {
         text-align: center;
         font-size: clamp(1.4rem, 10vw, 4rem);
         line-height: 1.1;
         width: 100%;
         max-width: 100%;
+        text-transform: none !important;
     }
     .modal-grid { 
         grid-template-columns: 1fr; 
