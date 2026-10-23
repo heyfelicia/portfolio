@@ -211,10 +211,10 @@ footer {
 }
 
 .profile {
-    background: #c0b0ff;
-    background-image: url('images/#');
+    
+    background-image: url('images/star.png');
     background-repeat: no-repeat;
-    background-size: 150%;
+    background-size: 100%;
     background-position: center;
     width: 55px;
     height: 55px;
