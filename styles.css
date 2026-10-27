@@ -1,7 +1,7 @@
 :root {
     --bg-base: #FFFFFF;
     --bg-dark: #252548;
-    --text-primary: #282854;
+    --text-primary: #515170;
     --text-secondary: #38386e;
     --accent-pink: #c0b0ff;
     --accent-blue: #9ECBFF;
@@ -253,7 +253,7 @@ footer {
     color: var(--font-sans);
     font-family: var(--font-heading);
     font-size: clamp(3rem, 5vw, 4.5rem);
-    font-weight: 200;
+    font-weight: 100;
     line-height: 1.1;
     letter-spacing: -0.03em;
     text-align: center;
@@ -377,8 +377,8 @@ h1, h2, h3, h4, h5, h6, .notes-title {
 }
 
 .project-1 {
-    grid-column: span 7;
-    height: 500px;
+    grid-column: span 5;
+    height: 400px;
     background-image: url('images/Aster.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -386,8 +386,8 @@ h1, h2, h3, h4, h5, h6, .notes-title {
 }
 
 .project-2 {
-    grid-column: span 5;
-    height: 500px;
+    grid-column: span 7;
+    height: 400px;
     background: var(--accent-blue);
     background-image: url('images/Butterfly.png');
     background-repeat: no-repeat;
@@ -416,7 +416,7 @@ h1, h2, h3, h4, h5, h6, .notes-title {
 
 .project-6 {
     grid-column: span 6;
-    height: 360px;
+    height: 400px;
     background: #FF8AD8;
     background-image: url('images/Amorous.png');
     background-repeat: no-repeat;
@@ -476,6 +476,7 @@ h1, h2, h3, h4, h5, h6, .notes-title {
     line-height: 1.6;
     max-width: 600px;
     margin: 0 auto;
+    font-weight: 100;
 }
 
 footer {
@@ -584,7 +585,7 @@ footer {
 
 .modal-container {
     position: relative;
-    width: min(95vw, 1400px);
+    width: min(95vw, 1600px);
     max-height: 90vh;
     overflow-y: auto;
     padding: 2.5rem;
@@ -666,6 +667,7 @@ footer {
     color: var(--text-secondary);
     font-size: 0.9rem;
     line-height: 1.6;
+    font-weight: 300;
 }
 
 .project-meta {
@@ -746,13 +748,16 @@ footer {
 .design-notes-header {
     padding-bottom: 0.5rem;
     border-bottom: 1px dashed rgba(84, 34, 59, 0.15);
+    
 }
 
 .notes-title {
     font-family: var(--font-heading);
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: 100;
     color: var(--text-primary);
+
+
 }
 
 .process-card {
@@ -773,6 +778,7 @@ footer {
     color: var(--text-secondary);
     font-size: 0.85rem;
     line-height: 1.5;
+    font-weight: 300;
 }
 
 .process-scroll-track {
