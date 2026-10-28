@@ -359,7 +359,7 @@ h1, h2, h3, h4, h5, h6, .notes-title {
 .projects {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.5rem;
     z-index: 2;
     order: 1;
@@ -377,7 +377,7 @@ h1, h2, h3, h4, h5, h6, .notes-title {
 }
 
 .project-1 {
-    grid-column: span 5;
+    /* grid-column: span 5;*/
     height: 400px;
     background-image: url('images/Aster.png');
     background-repeat: no-repeat;
@@ -386,7 +386,7 @@ h1, h2, h3, h4, h5, h6, .notes-title {
 }
 
 .project-2 {
-    grid-column: span 7;
+    /*grid-column: span 7;*/
     height: 400px;
     background: var(--accent-blue);
     background-image: url('images/Butterfly.png');
@@ -396,7 +396,7 @@ h1, h2, h3, h4, h5, h6, .notes-title {
 }
 
 .project-3 {
-    grid-column: span 5;
+   /* grid-column: span 5;*/
     height: 400px;
     background: var(--accent-lime);
     background-image: url('images/Dress.png');
@@ -406,7 +406,7 @@ h1, h2, h3, h4, h5, h6, .notes-title {
 }
 
 .project-4 {
-    grid-column: span 7;
+    /*grid-column: span 7;*/
     height: 400px;
     background-image: url('images/pomi.png');
     background-repeat: no-repeat;
@@ -415,7 +415,7 @@ h1, h2, h3, h4, h5, h6, .notes-title {
 }
 
 .project-6 {
-    grid-column: span 6;
+   /* grid-column: span 6;*/
     height: 400px;
     background: #FF8AD8;
     background-image: url('images/Amorous.png');
@@ -425,7 +425,7 @@ h1, h2, h3, h4, h5, h6, .notes-title {
 }
 
 .project-7 {
-    grid-column: span 7;
+    /*grid-column: span 7;*/
     height: 400px;
     background: #f8fbff;
     background-image: url('images/Cat.png');
