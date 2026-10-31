@@ -991,7 +991,7 @@ footer {
 .chatbot-option-card:nth-child(4n-1),
 .chat-suggestion-btn:nth-child(4n-1),
 .chat-option-btn:nth-child(4n-1) {
-    background-color: #ff9ce3;
+    background-color: #ffbcfb;
     color: var(--text-primary);
 }
 
