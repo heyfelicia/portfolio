@@ -1,6 +1,6 @@
 :root {
     --bg-base: #FFFFFF;
-    --bg-dark: #1e1e41;
+    --bg-dark: #2e2e54;
     --text-primary: #262639;
     --text-secondary: #38386e;
     --accent-pink: #c0b0ff;
@@ -81,7 +81,7 @@ footer {
 
 .nav-links {
     display: flex;
-    gap: 2.5rem;
+    gap: 3rem;
     align-items: center;
         margin-right:-60px;
 }
@@ -117,7 +117,7 @@ footer {
     gap: 0.5rem;
 
     padding: 0.5rem 1.5rem;
-    background:#1e1e41;;
+    background:#2e2e54;
     color: #fff;
 
     border-radius: 50px;
@@ -131,7 +131,7 @@ footer {
 }
 
 .nav-button:hover {
-    background: #121228;;
+    background: #262646;
     transform: translateY(-2px);
 }
 
@@ -984,7 +984,7 @@ footer {
 .chatbot-option-card,
 .chat-suggestion-btn,
 .chat-option-btn {
-    aspect-ratio: 2 / 1;
+    aspect-ratio: 3 / 1;
     width: 100%;
     min-width: 0;
     display: flex;
