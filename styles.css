@@ -15,7 +15,7 @@
     --font-mono: "Neulis Sans", "Neulis Monospaced", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
     --container-max: 1500px;
     --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    --page-padding: clamp(1rem, 3vw, 2.5rem);
+    --page-padding: clamp(1rem, 3vw, 3.5rem);
 }
 
 * {
@@ -64,7 +64,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem var(--page-padding) 0.6rem;
+    padding: 1.5rem var(--page-padding) 0.1rem;
     z-index: 100;
     margin: 20px;
 }
@@ -107,6 +107,41 @@ footer {
     pointer-events: none;
     cursor: default;
     opacity: 0.5;
+}
+
+.nav-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    padding: 0.5rem 1.5rem;
+    background: #050505;
+    color: #fff;
+
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 300;
+
+    transition: 
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.nav-button:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+.arrow {
+    width: 0.5rem;
+    height: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.nav-button:hover .arrow {
+    transform: translate(3px, -3px);
 }
 
 .menu-toggle {
@@ -174,7 +209,7 @@ footer {
 }
 
 .mobile-nav-link:hover {
-    color:##70e0ff;
+    color: #70e0ff;
     font-style: italic;
 }
 
@@ -216,8 +251,8 @@ footer {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    width: 55px;
-    height: 55px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     margin-bottom: 2rem;
 }
@@ -530,8 +565,8 @@ footer {
     position: fixed;
     right: 2.2rem;
     bottom: 2.2rem;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-image: url('images/Chatbot.svg');
     background-repeat: no-repeat;
