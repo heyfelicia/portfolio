@@ -1,10 +1,10 @@
 :root {
     --bg-base: #FFFFFF;
     --bg-dark: #252548;
-    --text-primary: #515170;
+    --text-primary: #2d2d4e;
     --text-secondary: #38386e;
     --accent-pink: #c0b0ff;
-    --accent-blue: #9ECBFF;
+    --accent-blue: #b2eaf9;
     --accent-lime: #F3F7C4;
     --border-color: rgba(84, 34, 59, 0.08);
     --accent-brown: rgba(84, 34, 59, 0.04);
@@ -525,6 +525,7 @@ footer {
     transform: translateY(-2px);
 }
 
+
 .chatbot {
     position: fixed;
     right: 2.2rem;
@@ -532,14 +533,18 @@ footer {
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    background-color: var(--accent-pink);
-    color: var(--bg-dark);
+    background-image: url('images/Chatbot.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: white;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     z-index: 100;
+    isolation: isolate;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -548,7 +553,7 @@ footer {
     position: absolute;
     inset: -4px;
     border-radius: 50%;
-    background-color: var(--accent-pink);
+    background-color: #ffb6e7;
     opacity: 0.4;
     z-index: -1;
     animation: chatbotPulse 2.4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
@@ -822,7 +827,7 @@ footer {
     background: var(--bg-dark);
     color: var(--bg-base);
     border: none;
-    border-radius: 22px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     z-index: 1000;
@@ -899,8 +904,8 @@ footer {
 }
 
 .chat-message {
-    padding: 1rem 1.15rem;
-    border-radius: 20px;
+    padding: 1rem 1rem;
+    border-radius: 12px;
     font-size: 0.88rem;
     line-height: 1.5;
     max-width: 90%;
@@ -911,7 +916,7 @@ footer {
     background: #424285;
     color: var(--bg-base);
     align-self: flex-start;
-    border-top-left-radius: 6px;
+    border-top-left-radius: 2px;
 }
 
 .user-message {
@@ -943,7 +948,7 @@ footer {
     justify-content: flex-end;
     align-items: flex-start;
     padding: 14px;
-    border-radius: 15px;
+    border-radius: 5px;
     border: none;
     font-family: var(--font-sans);
     font-weight: 400;
@@ -972,7 +977,7 @@ footer {
 .chatbot-option-card:nth-child(4n-2),
 .chat-suggestion-btn:nth-child(4n-2),
 .chat-option-btn:nth-child(4n-2) {
-    background-color: #9dc6ff;
+    background-color: #b2eaf9;
     color: var(--text-primary);
 }
 
@@ -986,7 +991,7 @@ footer {
 .chatbot-option-card:nth-child(4n),
 .chat-suggestion-btn:nth-child(4n),
 .chat-option-btn:nth-child(4n) {
-    background-color: #eeffba;
+    background-color: #f99678;
     color: var(--text-primary);
 }
 
@@ -1029,8 +1034,8 @@ footer {
     background: var(--accent-pink);
     color: black;
     border: none;
-    padding: 0.6rem 1.4rem;
-    border-radius: 14px;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
     font-weight: 400;
     font-size: 0.8rem;
     cursor: pointer;
