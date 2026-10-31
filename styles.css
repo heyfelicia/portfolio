@@ -174,7 +174,7 @@ footer {
 }
 
 .mobile-nav-link:hover {
-    color:#c0b0ff;
+    color:##70e0ff;
     font-style: italic;
 }
 
@@ -317,7 +317,7 @@ h1, h2, h3, h4, h5, h6, .notes-title {
 }
 
 .carousel-arrow:hover {
-    color: var(--accent-pink);
+    color: #70e0ff;
 }
 
 .carousel-dots {
@@ -337,7 +337,7 @@ h1, h2, h3, h4, h5, h6, .notes-title {
 }
 
 .dot.active {
-    background: var(--accent-pink);
+    background:#70e0ff;
     width: 18px;
     border-radius: 10px;
 }
