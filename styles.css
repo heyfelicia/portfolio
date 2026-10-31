@@ -308,7 +308,7 @@ h1, h2, h3, h4, h5, h6, .notes-title {
 .hero-subtitle {
     font-family: var(--font-sans);
     font-size: 2rem;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 2;
     letter-spacing: 0;
     text-align: center;
@@ -579,6 +579,7 @@ footer {
     justify-content: center;
     cursor: pointer;
     z-index: 100;
+    font-weight:300;
     isolation: isolate;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -872,6 +873,7 @@ footer {
     transform: translateY(15px) scale(0.95);
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     overflow: hidden;
+    font-weight:300;
 }
 
 .chatbot-window.open {
@@ -887,7 +889,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: 300;
+    font-weight:300;
 }
 
 .chatbot-title-area {
@@ -994,7 +996,7 @@ footer {
     border-radius: 5px;
     border: none;
     font-family: var(--font-sans);
-    font-weight: 300;
+    font-weight:300;
     font-size: 0.9rem;
     cursor: pointer;
     transition: var(--transition-smooth);
@@ -1008,6 +1010,7 @@ footer {
 .chat-option-btn span {
     color: inherit;
     font-size: 1rem;
+    font-weight:300;
 }
 
 .chatbot-option-card:nth-child(4n-3),
@@ -1048,6 +1051,7 @@ footer {
 .chatbot-footer {
     padding: 1.25rem;
     background: transparent;
+    font-weight:300;
 }
 
 #chatbot-form {
@@ -1067,6 +1071,7 @@ footer {
     outline: none;
     font-family: var(--font-sans);
     color: var(--bg-base);
+    font-weight:300;
 }
 
 #chatbot-input::placeholder {
@@ -1087,6 +1092,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight:300;
 }
 
 #chatbot-form button:hover {
