@@ -687,9 +687,9 @@ footer {
     align-items: center;
     gap: 8px;
     margin-bottom: 0.5rem;
-    font-family: var(--font-heading);
-    font-size: clamp(2.3rem, 4vw, 3rem);
-    font-weight: 300;
+    font-family: var(--font-sans);
+    font-size: clamp(2rem, 3.2vw, 3rem);
+    font-weight: 200;
     line-height: 1;
     color: var(--text-primary);
 }
@@ -792,10 +792,11 @@ footer {
 }
 
 .notes-title {
-    font-family: var(--font-heading);
+    font-family: var(--font-sans);
     font-size: 1.8rem;
-    font-weight: 100;
+    font-weight: 200;
     color: var(--text-primary);
+    line-height: 1.2;
 
 
 }
