@@ -1,7 +1,7 @@
 :root {
     --bg-base: #FFFFFF;
-    --bg-dark: #2c2c63;
-    --text-primary: #2d2d4e;
+    --bg-dark: #1e1e41;
+    --text-primary: #262639;
     --text-secondary: #38386e;
     --accent-pink: #c0b0ff;
     --accent-blue: #b2eaf9;
@@ -116,7 +116,7 @@ footer {
     gap: 0.5rem;
 
     padding: 0.5rem 1.5rem;
-    background: #050505;
+    background:#1e1e41;;
     color: #fff;
 
     border-radius: 50px;
