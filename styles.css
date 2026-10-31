@@ -337,7 +337,7 @@ h1, h2, h3, h4, h5, h6, .notes-title {
 }
 
 .dot.active {
-    background:#70e0ff;
+    background: var(--accent-pink);
     width: 18px;
     border-radius: 10px;
 }
