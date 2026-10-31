@@ -585,12 +585,13 @@ footer {
 .chatbot::before {
     content: '';
     position: absolute;
-    inset: -6px;
+    inset: -15px;
     border-radius: 50%;
     background-color: #b6ecff;
     opacity: 0.4;
-    z-index: -1;
+    z-index: 0;
     animation: chatbotPulse 2.4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
 }
 
 @keyframes chatbotPulse {
