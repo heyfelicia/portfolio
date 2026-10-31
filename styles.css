@@ -530,8 +530,8 @@ footer {
     position: fixed;
     right: 2.2rem;
     bottom: 2.2rem;
-    width: 52px;
-    height: 52px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-image: url('images/Chatbot.svg');
     background-repeat: no-repeat;
@@ -998,7 +998,7 @@ footer {
 .chatbot-option-card:nth-child(4n),
 .chat-suggestion-btn:nth-child(4n),
 .chat-option-btn:nth-child(4n) {
-    background-color: #f99678;
+    background-color: #ff6cd5;
     color: var(--text-primary);
 }
 
