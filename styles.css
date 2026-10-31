@@ -886,11 +886,14 @@ footer {
     align-items: center;
     justify-content: center;
     transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .chatbot-close:hover {
-    background: var(--accent-brown-hover);
-    color: var(--accent-pink);
+    background:rgb(255, 147, 212);
+    color: white;
 }
 
 .chatbot-body {
