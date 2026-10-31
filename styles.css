@@ -581,7 +581,6 @@ footer {
     z-index: 100;
     font-weight:300;
     isolation: isolate;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .chatbot::before {
@@ -604,7 +603,6 @@ footer {
 
 .chatbot:hover {
     transform: scale(1.08);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
 .modal-backdrop {
