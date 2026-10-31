@@ -97,7 +97,7 @@ footer {
 }
 
 .nav-link:hover {
-    color:#c0b0ff;
+    color:#70e0ff;
 }
 
 .nav-link.unavailable {
@@ -521,7 +521,7 @@ footer {
 }
 
 .footer-nav a:hover {
-    color: #FF8AD8;
+    color: #70e0ff;
     transform: translateY(-2px);
 }
 
