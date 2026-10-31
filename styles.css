@@ -1275,7 +1275,7 @@ font-size: 1.25rem;
     .chatbot-window {
         position: fixed;
         bottom: 2rem;
-        left: 46% !important;
+        left: 50% !important;
         right: auto !important;
         transform: translateX(-50%) !important;
         width: calc(100vw - 1.3rem);
