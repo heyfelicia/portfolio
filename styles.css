@@ -519,7 +519,7 @@ footer {
     background-color: var(--bg-dark);
     color: var(--bg-base);
     padding: 4rem var(--page-padding);
-    border-radius: 24px;
+    border-radius: 15px;
     width: 100%;
 }
 
