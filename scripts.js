@@ -36,40 +36,40 @@ const projects = {
     },
 
 
-    butterfly: {
-        title: "Butterfly",
-        category: "MOTION + BRANDING",
-        description: "A visual exploration centered around butterflies, movement, and transformation.",
-        role: "Designer + Motion Designer",
-        tools: "Illustrator, After Effects",
-        year: "2026",
-        deliverables: "Identity, Motion Graphics, Illustration",
-        projectCategory: "Motion Design",
+    designBureau: {
+    title: "The Design Bureau",
+    category: "BRANDING + GRAPHIC DESIGN",
+    description: "A visual identity for a Memphis-based creative community centered around design, experimentation, and collaboration.",
+    role: "Brand Designer",
+    tools: "Illustrator, Photoshop",
+    year: "2026",
+    deliverables: "Brand Identity, Logo Design, Posters, Graphic Design",
+    projectCategory: "Branding",
 
-        hero: "images/Butterfly.png",
+    hero: "images/Design.png",
 
-        gallery: [],
+    gallery: [],
 
-        challenge: "Translate the visual identity into a motion system that feels organic.",
+    challenge: "Create a distinctive visual identity that represents an inclusive creative community while incorporating Memphis-inspired visuals.",
 
-        process: [
-            {
-                title: "01 — THE IDEA",
-                text: "The concept began with butterflies revealing the identity through movement.",
-                images: []
-            },
-            {
-                title: "02 — EARLY EXPLORATION",
-                text: "Different wing movements and compositions were explored.",
-                images: []
-            },
-            {
-                title: "03 — WHY THIS DIRECTION?",
-                text: "The final animation uses movement to gradually reveal the wordmark.",
-                images: []
-            }
-        ]
-    },
+    process: [
+        {
+            title: "01 — THE IDEA",
+            text: "The concept began with creating a space where Memphis creatives could connect, share ideas, and explore different disciplines of design.",
+            images: []
+        },
+        {
+            title: "02 — EARLY EXPLORATION",
+            text: "Typography, geometric shapes, vibrant color combinations, and Adobe Illustrator-inspired elements were explored to establish the visual direction.",
+            images: []
+        },
+        {
+            title: "03 — WHY THIS DIRECTION?",
+            text: "The final identity combines bold typography, playful geometric elements, and an illustration of the Memphis bridge to represent creativity, connection, and community.",
+            images: []
+        }
+    ]
+},
 
 
     reverie: {
