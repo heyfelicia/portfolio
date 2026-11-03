@@ -48,7 +48,7 @@ const projects = {
 
     hero: "images/Design.png",
 
-    gallery: ["images/Helvetica.png", "images/D.png"],
+    gallery: ["images/Helvetica.png", "images/D.png", "images/Website.png"],
 
     challenge: "Create a distinctive visual identity that represents an inclusive creative community while incorporating Memphis-inspired visuals.",
 
